@@ -11,7 +11,7 @@ const login = (email, password) =>{
 
     if(user.length <=0) {
       
-        throw new ApiError(status.UNAUTHORIZED, "Email or Password Incorrect");
+        throw new ApiError(status.UNAUTHORIZED, "Email or Password Is Incorrect");
 }
  
     
