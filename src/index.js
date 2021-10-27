@@ -1,8 +1,8 @@
-require('dotenv').config()
+require('dotenv').config(); // dotenv package import
 const { config } = require('dotenv');
 const express = require('express');
 const logger = require('./config/logger');
-const morganMiddleware = require('./middlewares/morgan');
+const { morganMiddleware } = require('./middlewares'); // require morgan middleware
 const { ApiError } = require('./payload/ApiError');
 const { required } = require('joi');
 const { error } = require('winston');
@@ -21,7 +21,7 @@ const port = process.env.port;
 
 app.use(express.json());
 app.use(morganMiddleware); // use morgan middlleware in a seperate file
-app.use(cors);    // enabling CORS for all request
+//app.use(cors);    // enabling CORS for all request
 //app.use(helmet);  // adding Helmet to enhance your API's Security
 
 /**
@@ -46,6 +46,7 @@ res.status(status).send(new ApiError(status, error));
 // All The Exceptions Error Handling (Custom Error Middleware)
 app.use((err, req, res, next) => {
   res.status(err.status).send(err);
+  next();
 })
 
 

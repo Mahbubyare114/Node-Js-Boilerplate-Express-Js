@@ -8,11 +8,11 @@ const joi = require('joi');
         firstName: joi.string().required(),
         middleName: joi.string().optional(),
         lastName: joi.string().required(),
-        email: joi.string().email().required(),
+        email: joi.string().required().email(),
         age : joi.number().required().min(12).max(120),
         password: joi.string().min(6).required(),
         confirmPassword: joi.string().valid(joi.ref('password')).required(),
-        role: joi.string().valid('Admin', 'User').required()
+        role: joi.string().valid('admin', 'user').required()
     });
 
     // update user

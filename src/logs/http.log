@@ -1,0 +1,80 @@
+2021-10-27T20:01:20.058Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:2000
+2021-10-27T20:01:41.606Z [BoilerPlate] [32minfo[39m: Authentication on email mahbub@example.com and password mahbub123
+2021-10-27T20:01:44.884Z [BoilerPlate] [32minfo[39m: Authentication on email mahbub@example.com and password mahbub123
+2021-10-27T20:01:55.514Z [BoilerPlate] [32minfo[39m: Authentication on email mahbub@example.com and password mahbub1234
+2021-10-27T20:02:26.946Z [BoilerPlate] [32minfo[39m: Authentication on email mahbub@example.com and password mahbub1234
+2021-10-27T20:02:39.658Z [BoilerPlate] [32minfo[39m: Authentication on email mahbub@example.com and password mahbub123
+2021-10-27T20:06:02.198Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:2000
+2021-10-27T20:07:57.435Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:2000
+2021-10-27T20:08:27.738Z [BoilerPlate] [32minfo[39m: Calling Create User
+2021-10-27T20:08:27.739Z [BoilerPlate] [32minfo[39m: A New User Is Being Created!
+2021-10-27T20:08:31.430Z [BoilerPlate] [32minfo[39m: Calling Create User
+2021-10-27T20:08:31.431Z [BoilerPlate] [33mwarn[39m: This User Is Already Exists
+2021-10-27T20:09:38.222Z [BoilerPlate] [32minfo[39m: Calling Create User
+2021-10-27T20:09:38.223Z [BoilerPlate] [33mwarn[39m: This User Is Already Exists
+2021-10-27T20:09:52.394Z [BoilerPlate] [33mwarn[39m: This User Is Already Exists
+2021-10-27T20:09:52.398Z [BoilerPlate] [32minfo[39m: User is being Updated
+2021-10-27T20:14:23.173Z [BoilerPlate] [33mwarn[39m: Trying To Get Access Without Token!!
+2021-10-27T20:14:50.320Z [BoilerPlate] [32minfo[39m: Authenticated User
+2021-10-27T20:14:50.321Z [BoilerPlate] [32minfo[39m: All Users Are Being Fetched
+2021-10-27T20:18:09.997Z [BoilerPlate] [33mwarn[39m: This User Is Already Exists
+2021-10-27T20:18:09.998Z [BoilerPlate] [32minfo[39m: User is being Deleted
+2021-10-27T20:18:23.310Z [BoilerPlate] [33mwarn[39m: This User Is Already Exists
+2021-10-27T20:18:23.311Z [BoilerPlate] [32minfo[39m: User is being Updated
+2021-10-27T20:19:13.315Z [BoilerPlate] [32minfo[39m: Authenticated User
+2021-10-27T20:19:13.316Z [BoilerPlate] [32minfo[39m: All Users Are Being Fetched
+2021-10-27T20:19:26.033Z [BoilerPlate] [33mwarn[39m: This User Is Already Exists
+2021-10-27T20:19:26.034Z [BoilerPlate] [32minfo[39m: User is being Deleted
+2021-10-27T20:19:34.138Z [BoilerPlate] [32minfo[39m: Authenticated User
+2021-10-27T20:19:34.141Z [BoilerPlate] [32minfo[39m: All Users Are Being Fetched
+2021-10-27T20:20:10.301Z [BoilerPlate] [32minfo[39m: Authenticated User
+2021-10-27T20:20:10.302Z [BoilerPlate] [32minfo[39m: All Users Are Being Fetched
+2021-10-27T20:21:51.486Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:3000
+2021-10-27T20:22:04.253Z [BoilerPlate] [32minfo[39m: Authentication on email mahbub@example.com and password mahbub123
+2021-10-27T20:22:21.116Z [BoilerPlate] [32minfo[39m: Authentication on email mahbub@example.com and password mahbub1233
+2021-10-27T20:22:39.564Z [BoilerPlate] [32minfo[39m: Authentication on email mahbub@example.com and password mahbub123
+2021-10-27T20:23:09.961Z [BoilerPlate] [32minfo[39m: Calling Create User
+2021-10-27T20:23:09.961Z [BoilerPlate] [33mwarn[39m: This User Is Already Exists
+2021-10-27T20:23:10.959Z [BoilerPlate] [32minfo[39m: Calling Create User
+2021-10-27T20:23:10.960Z [BoilerPlate] [33mwarn[39m: This User Is Already Exists
+2021-10-27T20:23:18.101Z [BoilerPlate] [32minfo[39m: Calling Create User
+2021-10-27T20:23:18.102Z [BoilerPlate] [33mwarn[39m: This User Is Already Exists
+2021-10-27T20:23:24.203Z [BoilerPlate] [32minfo[39m: Calling Create User
+2021-10-27T20:23:24.203Z [BoilerPlate] [33mwarn[39m: This User Is Already Exists
+2021-10-27T20:24:23.985Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:3000
+2021-10-27T20:24:47.095Z [BoilerPlate] [32minfo[39m: Calling Create User
+2021-10-27T20:24:47.096Z [BoilerPlate] [32minfo[39m: A New User Is Being Created!
+2021-10-27T20:25:09.852Z [BoilerPlate] [32minfo[39m: Calling Create User
+2021-10-27T20:25:09.853Z [BoilerPlate] [33mwarn[39m: This User Is Already Exists
+2021-10-27T20:26:45.323Z [BoilerPlate] [32minfo[39m: Authenticated User
+2021-10-27T20:26:45.324Z [BoilerPlate] [32minfo[39m: All Users Are Being Fetched
+2021-10-27T20:27:47.426Z [BoilerPlate] [33mwarn[39m: This User Is Already Exists
+2021-10-27T20:27:47.427Z [BoilerPlate] [32minfo[39m: User is being Updated
+2021-10-27T20:28:03.707Z [BoilerPlate] [32minfo[39m: Authenticated User
+2021-10-27T20:28:03.707Z [BoilerPlate] [32minfo[39m: All Users Are Being Fetched
+2021-10-27T20:28:15.058Z [BoilerPlate] [33mwarn[39m: This User Is Already Exists
+2021-10-27T20:28:15.059Z [BoilerPlate] [32minfo[39m: User is being Updated
+2021-10-27T20:28:20.580Z [BoilerPlate] [32minfo[39m: Authenticated User
+2021-10-27T20:28:20.581Z [BoilerPlate] [32minfo[39m: All Users Are Being Fetched
+2021-10-27T20:28:28.703Z [BoilerPlate] [32minfo[39m: Authenticated User
+2021-10-27T20:28:28.704Z [BoilerPlate] [32minfo[39m: All Users Are Being Fetched
+2021-10-27T20:29:16.982Z [BoilerPlate] [33mwarn[39m: This User Is Already Exists
+2021-10-27T20:29:16.984Z [BoilerPlate] [32minfo[39m: User is being Deleted
+2021-10-27T20:29:25.387Z [BoilerPlate] [32minfo[39m: Authenticated User
+2021-10-27T20:29:25.388Z [BoilerPlate] [32minfo[39m: All Users Are Being Fetched
+2021-10-27T20:29:38.732Z [BoilerPlate] [33mwarn[39m: This User Is Already Exists
+2021-10-27T20:29:38.735Z [BoilerPlate] [32minfo[39m: User is being Deleted
+2021-10-27T20:29:44.149Z [BoilerPlate] [32minfo[39m: Authenticated User
+2021-10-27T20:29:44.150Z [BoilerPlate] [32minfo[39m: All Users Are Being Fetched
+2021-10-27T20:30:15.288Z [BoilerPlate] [32minfo[39m: Calling Create User
+2021-10-27T20:30:15.289Z [BoilerPlate] [32minfo[39m: A New User Is Being Created!
+2021-10-27T20:30:25.346Z [BoilerPlate] [32minfo[39m: Authenticated User
+2021-10-27T20:30:25.347Z [BoilerPlate] [32minfo[39m: All Users Are Being Fetched
+2021-10-27T20:30:40.987Z [BoilerPlate] [33mwarn[39m: This User Is Already Exists
+2021-10-27T20:30:40.988Z [BoilerPlate] [32minfo[39m: User is being Deleted
+2021-10-27T20:30:49.192Z [BoilerPlate] [32minfo[39m: Authenticated User
+2021-10-27T20:30:49.193Z [BoilerPlate] [32minfo[39m: All Users Are Being Fetched
+2021-10-27T20:42:06.304Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:3000
+2021-10-27T20:42:18.385Z [BoilerPlate] [33mwarn[39m: Trying To Get Access Without Token!!
+2021-10-27T20:42:25.091Z [BoilerPlate] [32minfo[39m: Authenticated User
+2021-10-27T20:42:25.092Z [BoilerPlate] [32minfo[39m: All Users Are Being Fetched
