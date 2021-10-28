@@ -10,7 +10,7 @@ const auth = (req, res, next) => {
     
     let token = req.headers['x-access-token'];
     if(!token){
-        logger.warn('Trying To Get Access Without Token!!');
+        logger.warn('Someone Is Trying To Get Access Without Token!!');
         throw new ApiError(401, 'Plz Enter Your Access Token');
     } 
 

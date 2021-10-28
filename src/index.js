@@ -4,8 +4,6 @@ const express = require('express');
 const logger = require('./config/logger');
 const { morganMiddleware } = require('./middlewares'); // require morgan middleware
 const { ApiError } = require('./payload/ApiError');
-const { required } = require('joi');
-const { error } = require('winston');
 const httpStatus = require('http-status');
 const helmet = require("helmet");  // determine the header in express
 const cors = require('cors');  // cross origin resourse sharing
@@ -21,8 +19,8 @@ const port = process.env.port;
 
 app.use(express.json());
 app.use(morganMiddleware); // use morgan middlleware in a seperate file
-//app.use(cors);    // enabling CORS for all request
-//app.use(helmet);  // adding Helmet to enhance your API's Security
+app.use(cors());    // enabling CORS for all request
+app.use(helmet());  // adding Helmet to enhance your API's Security
 
 /**
  * Router Middleware
