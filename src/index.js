@@ -19,8 +19,13 @@ const port = process.env.port;
 
 app.use(express.json());
 app.use(morganMiddleware); // use morgan middlleware in a seperate file
+<<<<<<< HEAD
 app.use(cors());    // enabling CORS for all request
 app.use(helmet());  // adding Helmet to enhance your API's Security
+=======
+app.use(cors);    // enabling CORS for all request
+//app.use(helmet);  // adding Helmet to enhance your API's Security
+>>>>>>> 7b1e8ebb6fb89dc81857e08f4baea09a3ca7ced2
 
 /**
  * Router Middleware
