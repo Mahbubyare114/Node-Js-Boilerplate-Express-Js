@@ -5,8 +5,9 @@ const logger = require('./config/logger');
 const { morganMiddleware } = require('./middlewares'); // require morgan middleware
 const { ApiError } = require('./payload/ApiError');
 const httpStatus = require('http-status');
+const cors = require('cors');
 const helmet = require('helmet');  // determine the header in express
-const cors = require('cors');  // cross origin resourse sharing
+  // cross origin resourse sharing
 
 const app = express();
 const BaseURL = process.env.BaseURL;
