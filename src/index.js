@@ -10,7 +10,7 @@ const helmet = require('helmet');  // determine the header in express
   // cross origin resourse sharing
 
 const app = express();
-const BaseURL = process.env.BaseURL;
+//const BaseURL = process.env.BaseURL;
 const port = process.env.port;
 
 
@@ -55,6 +55,6 @@ app.use((err, req, res, next) => {
 
 
 app.listen(port, () =>{
-  logger.info(`app is listening on port ${BaseURL}:${port}`);
+  logger.info(`app is listening on port ${port}`);
 }); 
 
