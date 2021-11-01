@@ -46,10 +46,12 @@ res.status(status).send(new ApiError(status, error));
 });
 
 // All The Exceptions Error Handling (Custom Error Middleware)
+
 app.use((err, req, res, next) => {
   res.status(err.status).send(err);
   next();
 })
+
 
 
 app.listen(port, () =>{

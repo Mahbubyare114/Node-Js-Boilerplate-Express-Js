@@ -10,7 +10,7 @@ const login = (req, res) => {
     let password = req.body.password;
     let loginResponse = authServices.login(email, password);
 
-    res.status(status.OK).send(new ApiResponse(status.OK, "Token Generated Successfully", loginResponse));
+    res.status(status.OK).send(new ApiResponse(status.OK, "Login Successfully", loginResponse));
 }
 
 

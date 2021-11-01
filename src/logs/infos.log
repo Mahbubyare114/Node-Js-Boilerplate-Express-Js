@@ -111,3 +111,105 @@
 2021-10-28T08:14:35.468Z [BoilerPlate] [32minfo[39m: All Users Are Being Fetched
 2021-10-28T08:15:06.396Z [BoilerPlate] [32minfo[39m: Authenticated User
 2021-10-28T08:15:06.397Z [BoilerPlate] [32minfo[39m: All Users Are Being Fetched
+2021-10-28T08:52:43.929Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:3000
+2021-10-28T08:52:49.203Z [BoilerPlate] [32minfo[39m: Authenticated User
+2021-10-28T08:52:49.204Z [BoilerPlate] [32minfo[39m: All Users Are Being Fetched
+2021-10-28T08:52:53.452Z [BoilerPlate] [33mwarn[39m: Someone Is Trying To Get Access Without Token!!
+2021-10-28T08:52:59.011Z [BoilerPlate] [32minfo[39m: Calling Create User
+2021-10-28T08:52:59.013Z [BoilerPlate] [32minfo[39m: A New User Is Being Created!
+2021-10-28T08:53:01.583Z [BoilerPlate] [32minfo[39m: Calling Create User
+2021-10-28T08:53:01.584Z [BoilerPlate] [33mwarn[39m: This User Is Already Exists
+2021-10-28T08:53:06.376Z [BoilerPlate] [33mwarn[39m: This User Is Already Exists
+2021-10-28T08:53:06.379Z [BoilerPlate] [32minfo[39m: User is being Updated
+2021-10-28T08:53:11.219Z [BoilerPlate] [32minfo[39m: Authenticated User
+2021-10-28T08:53:11.221Z [BoilerPlate] [32minfo[39m: All Users Are Being Fetched
+2021-10-28T08:53:33.067Z [BoilerPlate] [33mwarn[39m: This User Is Already Exists
+2021-10-28T08:53:33.068Z [BoilerPlate] [32minfo[39m: User is being Deleted
+2021-10-28T08:53:38.999Z [BoilerPlate] [33mwarn[39m: This User Is Already Exists
+2021-10-28T08:53:39.000Z [BoilerPlate] [32minfo[39m: User is being Deleted
+2021-10-28T08:53:59.140Z [BoilerPlate] [33mwarn[39m: This User Is Already Exists
+2021-10-28T08:53:59.141Z [BoilerPlate] [32minfo[39m: User is being Deleted
+2021-10-28T08:54:08.747Z [BoilerPlate] [32minfo[39m: Authenticated User
+2021-10-28T08:54:08.748Z [BoilerPlate] [32minfo[39m: All Users Are Being Fetched
+2021-10-28T08:59:41.432Z [BoilerPlate] [33mwarn[39m: Someone Is Trying To Get Access Without Token!!
+2021-10-28T08:59:47.023Z [BoilerPlate] [32minfo[39m: Authentication on email mahbub@example.com and password mahbub123
+2021-10-28T09:00:01.799Z [BoilerPlate] [32minfo[39m: Calling Create User
+2021-10-28T09:00:01.800Z [BoilerPlate] [32minfo[39m: A New User Is Being Created!
+2021-10-28T09:00:50.596Z [BoilerPlate] [33mwarn[39m: Someone Is Trying To Get Access Without Token!!
+2021-10-28T09:01:02.068Z [BoilerPlate] [32minfo[39m: Authentication on email mahbub@example.com and password huss@123
+2021-10-28T09:01:12.800Z [BoilerPlate] [32minfo[39m: Authenticated User
+2021-10-28T09:01:12.801Z [BoilerPlate] [32minfo[39m: All Users Are Being Fetched
+2021-10-31T18:56:03.533Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:3000
+2021-10-31T20:02:14.697Z [BoilerPlate] [32minfo[39m: Authenticated User
+2021-10-31T20:02:14.699Z [BoilerPlate] [32minfo[39m: All Users Are Being Fetched
+2021-10-31T20:03:35.602Z [BoilerPlate] [33mwarn[39m: This User Is Already Exists
+2021-10-31T20:03:35.603Z [BoilerPlate] [32minfo[39m: User is being Deleted
+2021-11-01T06:50:11.685Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:3000
+2021-11-01T08:20:26.701Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:3000
+2021-11-01T08:21:49.482Z [BoilerPlate] [32minfo[39m: Authentication on email mahbub@example.com and password huss@123
+2021-11-01T08:22:23.253Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:3000
+2021-11-01T08:22:25.203Z [BoilerPlate] [32minfo[39m: Authentication on email mahbub@example.com and password huss@123
+2021-11-01T08:23:33.751Z [BoilerPlate] [32minfo[39m: Authentication on email mahbub@example.com and password mahbub123
+2021-11-01T08:23:49.505Z [BoilerPlate] [33mwarn[39m: Someone Is Trying To Get Access Without Token!!
+2021-11-01T08:23:59.001Z [BoilerPlate] [32minfo[39m: Authenticated User
+2021-11-01T08:23:59.002Z [BoilerPlate] [32minfo[39m: All Users Are Being Fetched
+2021-11-01T08:25:26.271Z [BoilerPlate] [33mwarn[39m: Someone Is Trying To Get Access Without Token!!
+2021-11-01T08:25:40.730Z [BoilerPlate] [32minfo[39m: Authenticated User
+2021-11-01T08:25:40.731Z [BoilerPlate] [32minfo[39m: All Users Are Being Fetched
+2021-11-01T08:26:45.748Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:3000
+2021-11-01T08:26:54.536Z [BoilerPlate] [32minfo[39m: Authentication on email mahbub@example.com and password mahbub123
+2021-11-01T08:38:09.818Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:3000
+2021-11-01T08:38:17.550Z [BoilerPlate] [32minfo[39m: Authentication on email mahbub@example.com and password mahbub123
+2021-11-01T08:41:17.583Z [BoilerPlate] [32minfo[39m: Authenticated User
+2021-11-01T08:41:17.585Z [BoilerPlate] [32minfo[39m: All Users Are Being Fetched
+2021-11-01T08:45:05.139Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:3000
+2021-11-01T08:46:41.223Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:3000
+2021-11-01T08:47:14.602Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:3000
+2021-11-01T08:47:27.629Z [BoilerPlate] [32minfo[39m: Authenticated User
+2021-11-01T08:47:27.630Z [BoilerPlate] [32minfo[39m: All Users Are Being Fetched
+2021-11-01T08:48:45.759Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:3000
+2021-11-01T08:49:36.916Z [BoilerPlate] [33mwarn[39m: Someone Is Trying To Get Access Without Token!!
+2021-11-01T08:50:19.884Z [BoilerPlate] [32minfo[39m: Authentication on email mahbub@example.com and password mahbub123
+2021-11-01T08:50:43.435Z [BoilerPlate] [33mwarn[39m: Someone Is Trying To Get Access Without Token!!
+2021-11-01T08:52:19.210Z [BoilerPlate] [32minfo[39m: Authenticated User
+2021-11-01T08:52:19.211Z [BoilerPlate] [32minfo[39m: All Users Are Being Fetched
+2021-11-01T08:53:28.541Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:3000
+2021-11-01T08:53:34.003Z [BoilerPlate] [32minfo[39m: User Is Authenticated
+2021-11-01T08:53:34.004Z [BoilerPlate] [32minfo[39m: All Users Are Being Fetched
+2021-11-01T08:53:56.197Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:3000
+2021-11-01T08:53:58.795Z [BoilerPlate] [32minfo[39m: User Is Authenticated
+2021-11-01T08:53:58.796Z [BoilerPlate] [32minfo[39m: All Users Are Being Fetched
+2021-11-01T08:54:52.155Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:3000
+2021-11-01T08:56:12.147Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:3000
+2021-11-01T08:56:25.559Z [BoilerPlate] [32minfo[39m: User Is Authenticated
+2021-11-01T08:56:25.560Z [BoilerPlate] [32minfo[39m: All Users Are Being Fetched
+2021-11-01T08:57:35.929Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:3000
+2021-11-01T08:58:07.014Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:3000
+2021-11-01T08:58:26.141Z [BoilerPlate] [32minfo[39m: Authenticated User
+2021-11-01T08:58:26.142Z [BoilerPlate] [32minfo[39m: All Users Are Being Fetched
+2021-11-01T08:58:55.839Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:3000
+2021-11-01T08:59:20.847Z [BoilerPlate] [32minfo[39m: Authenticated User
+2021-11-01T08:59:20.849Z [BoilerPlate] [32minfo[39m: All Users Are Being Fetched
+2021-11-01T09:00:11.795Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:3000
+2021-11-01T09:00:15.832Z [BoilerPlate] [32minfo[39m: Authenticated User
+2021-11-01T09:00:15.834Z [BoilerPlate] [32minfo[39m: All Users Are Being Fetched
+2021-11-01T10:28:14.014Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:3000
+2021-11-01T10:28:18.511Z [BoilerPlate] [33mwarn[39m: Someone Is Trying To Get Access Without Token!!
+2021-11-01T10:30:18.090Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:3000
+2021-11-01T10:30:24.675Z [BoilerPlate] [33mwarn[39m: Someone Is Trying To Get Access Without Token!!
+2021-11-01T10:31:04.002Z [BoilerPlate] [32minfo[39m: Authenticated User
+2021-11-01T10:31:04.005Z [BoilerPlate] [32minfo[39m: All Users Are Being Fetched
+2021-11-01T10:31:52.879Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:3000
+2021-11-01T10:31:54.985Z [BoilerPlate] [33mwarn[39m: Someone Is Trying To Get Access Without Token!!
+2021-11-01T10:32:51.680Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:3000
+2021-11-01T10:33:09.960Z [BoilerPlate] [32minfo[39m: Authenticated User
+2021-11-01T10:33:09.961Z [BoilerPlate] [32minfo[39m: All Users Are Being Fetched
+2021-11-01T10:35:05.350Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:3000
+2021-11-01T10:35:12.042Z [BoilerPlate] [33mwarn[39m: Someone Is Trying To Get Access Without Token!!
+2021-11-01T10:35:42.656Z [BoilerPlate] [32minfo[39m: Authenticated User
+2021-11-01T10:35:42.659Z [BoilerPlate] [32minfo[39m: All Users Are Being Fetched
+2021-11-01T10:36:58.781Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:3000
+2021-11-01T10:37:02.712Z [BoilerPlate] [33mwarn[39m: Someone Is Trying To Get Access Without Token!!
+2021-11-01T10:37:40.000Z [BoilerPlate] [32minfo[39m: Authenticated User
+2021-11-01T10:37:40.002Z [BoilerPlate] [32minfo[39m: All Users Are Being Fetched
+2021-11-01T10:37:50.924Z [BoilerPlate] [33mwarn[39m: Someone Is Trying To Get Access Without Token!!
