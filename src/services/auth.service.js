@@ -18,7 +18,7 @@ const login = (email, password) =>{
 
 // Generate jwt (json web token) to the user :1-object  2- time     3-private key
   
-    let token = jwt.sign({user}, process.env.JWT_SECRET_KEY);
+    let token = jwt.sign({user}, process.env.JWT_SECRET_KEY , { expiresIn: '1m' });
    // console.log(token);
 
     return {accessToken: token};

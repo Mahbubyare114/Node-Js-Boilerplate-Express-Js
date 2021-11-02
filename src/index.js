@@ -5,13 +5,12 @@ const logger = require('./config/logger');
 const { morganMiddleware } = require('./middlewares'); // require morgan middleware
 const { ApiError } = require('./payload/ApiError');
 const httpStatus = require('http-status');
-const cors = require('cors');
+const cors = require('cors');       // cross origin resourse sharing
 const helmet = require('helmet');  // determine the header in express
-  // cross origin resourse sharing
-
+const database = require('./config/database')
 const app = express();
-//const BaseURL = process.env.BaseURL;
-const port = process.env.port;
+const BaseURL = process.env.BaseURL;
+const port = process.env.PORT;
 
 
 /**
@@ -22,7 +21,7 @@ app.use(express.json());
 app.use(morganMiddleware); // use morgan middlleware in a seperate file
 
 app.use(cors());    // enabling CORS for all request
-app.use(helmet());  // adding Helmet to enhance your API's Security
+//app.use(helmet());  // adding Helmet to enhance your API's Security
   
 
 
@@ -55,6 +54,6 @@ app.use((err, req, res, next) => {
 
 
 app.listen(port, () =>{
-  logger.info(`app is listening on port ${port}`);
+  logger.info(`app is listening on port ${BaseURL}:${port}`);
 }); 
 
