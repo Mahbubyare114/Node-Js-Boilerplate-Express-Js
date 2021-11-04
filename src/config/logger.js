@@ -11,7 +11,7 @@ const myFormat = printf(({ level, message, label, timestamp }) => {
   
     format: combine(
       winston.format.colorize(),
-      label({ label: process.env.ProjectName }),
+      label({ label: process.env.PROJECT_NAME }),
       timestamp(),
       myFormat
       // prettyPrint() displays logs as json format

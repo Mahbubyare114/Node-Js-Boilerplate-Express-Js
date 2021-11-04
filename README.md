@@ -5,14 +5,16 @@
 2. Project Structure
 - src
   - controller
-  - model
-  - service
-  - util
+  - models
+  - services
+  - utils
   - routes
   - payload
   - middlewares
   - validations
   - config
+  - logs
+ 
 
 3. Libraries
 - Express
@@ -22,8 +24,14 @@
 - JOI
 - Winston - use for logging purposes
 - Cors - Cross Origin resource sharing
-- helmet - determine the header in express
+- Helmet - determine the header in express
 
+
+4. Database -> OracleDB
+- Connecting to oracleDB
+- Executing Some Queries
+- Retreiving Data from oracle
+- Closing the Connection
 
 
 

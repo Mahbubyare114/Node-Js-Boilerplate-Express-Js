@@ -1,4 +1,5 @@
 const { ApiError } = require("../payload/ApiError");
+const database = require('../config/database');
 
 // static database
 const users = [{
@@ -23,9 +24,16 @@ const users = [{
 }];
 
 // functions
-const getAllUsers = () => {
-    return users
+const getAllUsers = async () => {
+    let query = `SELECT * FROM USERS`;
+    let result = await database.executeQuery(query);
+
+    console.log(result);
+    return result;
+    //return users
 }
+
+
 
 const getUserById = (id) => {
     return users.filter(u => u.id === id);

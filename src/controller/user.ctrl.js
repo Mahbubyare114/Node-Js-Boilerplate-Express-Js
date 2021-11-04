@@ -4,7 +4,8 @@ const { loggers } = require('winston');
 const logger = require('../config/logger');
 const { ApiError } = require('../payload/ApiError');
 const { ApiResponse } = require('../payload/ApiResponse');
-const { userServices } = require('../services')
+const { userServices } = require('../services');
+const {handleAsync} = require('../utils/util');
 
 // create a new user
 const create = (req, res) => {
@@ -80,13 +81,13 @@ if(deletedUser){
 }
 
 // get all users
-const getAllUsers = (req, res) => {
-   let users = userServices.getAllUsers();
+const getAllUsers = handleAsync( async (req, res) => {  
+   let user = await userServices.getAllUsers();
    res
    .status(status.OK)
-   .send(new ApiResponse(status.OK, 'All Users Are Here!' , users));
+   .send(new ApiResponse(status.OK, 'All Users Are Here!' , user));
 
-}
+});
 
 // get user by it's id
  /* const getUserById = (req, res) => {

@@ -56,7 +56,7 @@ const deleteUser = (user) => {
  * 
  * @returns AllUsers from Static Db
  */
-const getAllUsers = () => {
+const getAllUsers = async () => {
     logger.info('All Users Are Being Fetched');
     return userModel.getAllUsers();
    
