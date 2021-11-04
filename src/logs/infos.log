@@ -419,3 +419,6 @@
 2021-11-04T09:10:59.133Z [BoilerPlate] [32minfo[39m: connected to the database
 2021-11-04T09:11:16.564Z [BoilerPlate] [32minfo[39m: All Users Are Being Fetched
 2021-11-04T09:11:26.010Z [BoilerPlate] [32minfo[39m: All Users Are Being Fetched
+2021-11-04T09:12:23.896Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-04T09:12:33.515Z [BoilerPlate] [32minfo[39m: All Users Are Being Fetched
+2021-11-04T09:12:33.724Z [BoilerPlate] [32minfo[39m: connected to the database
