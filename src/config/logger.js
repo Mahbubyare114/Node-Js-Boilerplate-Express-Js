@@ -6,7 +6,7 @@ const myFormat = printf(({ level, message, label, timestamp }) => {
   return `${timestamp} [${label}] ${level}: ${message}`;
 });
 
-  // Creating your own Logger
+  // Creating my own Logger
   const logger = winston.createLogger({
   
     format: combine(

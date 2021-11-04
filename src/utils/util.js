@@ -5,6 +5,7 @@ const handleAsync = (fn) => (req, res, next) => {
     .catch((err) => next(err));
   };
   
+  
   const parseDatabaseObject = (data) => {
     let coloums = data.metaData;
     let rows = data.rows;
@@ -17,7 +18,7 @@ const handleAsync = (fn) => (req, res, next) => {
       });
       array.push(obj);
     });
-    console.log(array);
+   // console.log(array);
   
     return array;
   };

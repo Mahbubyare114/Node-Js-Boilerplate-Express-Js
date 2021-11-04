@@ -6,9 +6,11 @@ const jwt = require('jsonwebtoken');
 const auth = (req, res, next) => {
 
     // check headers for access token
-   //let token = req.headers['x-access-token'];
-    let token = req.headers['authorization'];
-    //let token = reqHeader.split(' ')[1];
+   // let reqHeader = req.headers['x-access-token'];
+  //  let token = reqHeader.split(' ')[1];
+
+    let token = req.headers.authorization;
+  
     if(!token){
         logger.warn('Someone Is Trying To Get Access Without Token!!');
         throw new ApiError(401, 'Plz Enter Your Access Token');
@@ -16,10 +18,10 @@ const auth = (req, res, next) => {
 
     let response = jwt.verify(token, process.env.JWT_SECRET_KEY);
     if(response && response.user){
-        logger.info('Authenticated User');
+        logger.info('Authenticated User Logged In');
         next();
     }
-    // throw new ApiError(401, 'Your Authentication is Expired for Now!, Plz Login Again');
+     throw new ApiError(401, 'Your Authentication is Expired for Now!, Plz Login Again');
     
 }
 

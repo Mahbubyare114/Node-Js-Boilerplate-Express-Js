@@ -1,5 +1,6 @@
 const { ApiError } = require("../payload/ApiError");
-const database = require('../config/database');
+const db = require('../config/database');
+const logger = require("../config/logger");
 
 // static database
 const users = [{
@@ -26,11 +27,12 @@ const users = [{
 // functions
 const getAllUsers = async () => {
     let query = `SELECT * FROM USERS`;
-    let result = await database.executeQuery(query);
+    let result = await db.executeQuery(query);
 
-    console.log(result);
+    logger.info('All Users Are Being Fetched');
     return result;
-    //return users
+    
+
 }
 
 
@@ -45,9 +47,15 @@ const getUserByEmailAndPassword = (email, password) => {
     return users.filter(u => u.email === email && u.password === password);
 }
 
-const create = (user) => {
-    users.push(user);
-    return true;
+const create = async (user) => {
+    let query = 
+    `INSERT INTO USERS VALUES (4,'Dadir','Isse','Dadir@gmail.com','Dadir123')`;
+    let result = await db.executeQuery(query);
+
+    logger.info('A New User Is Being Created!');
+    return result;
+    // users.push(user);
+    // return true;
 }
 
 const update = (user) => {

@@ -28,9 +28,7 @@ const isEmailExist = (email) => {
  * @param {create} user 
  * @returns user
  */
-const createUser = (user) => {
-    logger.info('A New User Is Being Created!');
-
+const createUser = async (user) => {
     let userCreated = userModel.create(user);
     return user;
 }
@@ -53,11 +51,9 @@ const deleteUser = (user) => {
 
 
 /**
- * 
- * @returns AllUsers from Static Db
+ * @returns AllUsers from oracle db
  */
 const getAllUsers = async () => {
-    logger.info('All Users Are Being Fetched');
     return userModel.getAllUsers();
    
 }

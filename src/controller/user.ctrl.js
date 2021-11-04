@@ -8,7 +8,7 @@ const { userServices } = require('../services');
 const {handleAsync} = require('../utils/util');
 
 // create a new user
-const create = (req, res) => {
+const create = handleAsync( async(req, res) => {
 
     logger.info('Calling Create User');
    
@@ -29,7 +29,9 @@ const create = (req, res) => {
     // }
 
     // if not exist then create it
-    let createUserStatus = userServices.createUser(user);
+
+
+    let createUserStatus = await userServices.createUser(user);
     if(createUserStatus){
         return res.status(status.OK)
         .send(new ApiResponse(status.OK, 'User is Created Successfully'));
@@ -38,6 +40,7 @@ const create = (req, res) => {
         return res.status(status.INTERNAL_SERVER_ERROR)
         .send(new ApiError(status.INTERNAL_SERVER_ERROR, "Something Went Wrong!!"));
     }
+);
 
 // update user
 const update = (req, res) => {
