@@ -6,18 +6,22 @@ const { ApiResponse } = require('../payload/ApiResponse');
 
 
 const login = (req, res) => {
+
+    let message = res.__('loginSuccess'); // i18n multi-lang support
+    
     let email = req.body.email;
     let password = req.body.password;
     let loginResponse = authServices.login(email, password);
 
-    res.status(status.OK).send(new ApiResponse(status.OK, "Login Successfully", loginResponse));
+    res.status(status.OK).send(new ApiResponse(status.OK, message, loginResponse));
 }
 
 
 
 
 const register = (req, res) => {
-    res.status(status.NOT_IMPLEMENTED).send(new ApiResponse(status.NOT_IMPLEMENTED, 'Not Implemented'));
+    let message = res.__('notImplemented');
+    res.status(status.NOT_IMPLEMENTED).send(new ApiResponse(status.NOT_IMPLEMENTED, message));
     
 }
 

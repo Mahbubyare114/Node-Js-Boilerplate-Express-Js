@@ -6,7 +6,7 @@ const {validate} = require('../../middlewares');
 const {authValidatorMiddleware} = require('../../middlewares');
 
 
-
+router.get('/test', userController.testCall); 
 router.post('/create',validate(userValidator.createUser), userController.create); // user obj validation
 router.patch('/update',validate(userValidator.updateUser) ,userController.update); // update by Id
 router.get('/getAllUsers',userController.getAllUsers); 

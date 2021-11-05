@@ -85,12 +85,26 @@ if(deletedUser){
 
 // get all users
 const getAllUsers = handleAsync( async (req, res) => {  
+
+    let message = res.__('allUsers'); // i18n support for res
+
    let user = await userServices.getAllUsers();
    res
    .status(status.OK)
-   .send(new ApiResponse(status.OK, 'All Users Are Here!' , user));
+   .send(new ApiResponse(status.OK, message , user));
 
 });
+
+// test call for i18n multi-lang
+const testCall = handleAsync( async (req, res) => {  
+ 
+    let message = res.__('amountTransfer');
+
+     res
+    .status(status.OK)
+    .send(new ApiResponse(status.OK, message));
+ 
+ });
 
 // get user by it's id
  /* const getUserById = (req, res) => {
@@ -113,6 +127,7 @@ module.exports = {
     update,
     getAllUsers,
   //  getUserById,
-    delet
+    delet,
+    testCall
 
 }

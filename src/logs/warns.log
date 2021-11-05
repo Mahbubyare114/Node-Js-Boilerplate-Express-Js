@@ -2,3 +2,6 @@
 2021-11-04T17:42:11.342Z [BoilerPlate] [31merror[39m: ORA-12170: TNS:Connect timeout occurred
 2021-11-04T17:42:20.493Z [BoilerPlate] [31merror[39m: NJS-077: Oracle Client library has already been initialized
 2021-11-04T17:42:23.278Z [BoilerPlate] [31merror[39m: NJS-077: Oracle Client library has already been initialized
+2021-11-04T21:58:24.656Z [BoilerPlate] [31merror[39m: NJS-077: Oracle Client library has already been initialized
+2021-11-04T21:58:30.796Z [BoilerPlate] [31merror[39m: NJS-077: Oracle Client library has already been initialized
+2021-11-04T22:01:44.070Z [BoilerPlate] [31merror[39m: NJS-077: Oracle Client library has already been initialized
