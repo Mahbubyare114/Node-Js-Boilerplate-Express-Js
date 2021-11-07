@@ -9,5 +9,6 @@
     "userCreated"    : "Isticmaalaha si guul leh ayaa loo abuuray",
     "userUpdated"    : "Isticmaalaha si guul leh ayaa loo cusboonaysiiyay",
     "userDeleted"    : "Isticmaalaha si guul leh ayaa loo tirtiray",
-    "internalErrorMsg" : "Waxbaa qaldamay!"
+    "internalErrorMsg" : "Waxbaa qaldamay!",
+    "incorrectEmailOrPassError" : "Email ka ama Password ka Waa Uu Khaldanyahay!"
 }

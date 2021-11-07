@@ -10,5 +10,6 @@
     "userUpdated"    : "User Updated Successfully",
     "userCreated"    : "User is Created Successfully",
     "userDeleted"    : "User is Deleted Successfully",
-    "internalErrorMsg" : "Something We nt Wrong!"
+    "internalErrorMsg" : "Something We nt Wrong!",
+    "incorrectEmailOrPassError" : "Email or Password Is Incorrect"
 }

@@ -9,5 +9,6 @@
     "userCreated"    : "تم إنشاء المستخدم بنجاح",
     "userUpdated"    : "تم تحديث المستخدم بنجاح",
     "userDeleted"    : "تم حذف المستخدم بنجاح",
-    "internalErrorMsg" : "هناك خطأ ما!"
+    "internalErrorMsg" : "هناك خطأ ما!",
+    "incorrectEmailOrPassError" : "البريد الالكتروني او كلمة المرور غير صحيحة"
 }

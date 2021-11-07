@@ -1,30 +1,27 @@
 const status = require('http-status');
-const logger = require('../config/logger');
 const { authServices } = require('../services')
-const { ApiError } = require('../payload/ApiError');
 const { ApiResponse } = require('../payload/ApiResponse');
+const {handleAsync} = require('../utils/util');
 
-
-const login = (req, res) => {
+// ========== User API Service Calls Starts From Here  ========== //
+const login = async(req, res) => {
 
     let message = res.__('loginSuccess'); // i18n multi-lang support
     
-    let email = req.body.email;
-    let password = req.body.password;
-    let loginResponse = authServices.login(email, password);
+    let loginResponse = authServices.login(req.body.email, req.body.password)
+    res.status(status.OK)
+    .send(new ApiResponse(status.OK, message, loginResponse));
 
-    res.status(status.OK).send(new ApiResponse(status.OK, message, loginResponse));
-}
-
-
-
+};
 
 const register = (req, res) => {
     let message = res.__('notImplemented');
-    res.status(status.NOT_IMPLEMENTED).send(new ApiResponse(status.NOT_IMPLEMENTED, message));
+
+    res.status(status.NOT_IMPLEMENTED)
+    .send(new ApiResponse(status.NOT_IMPLEMENTED, message));
     
 }
-
+// ========== User API Service Calls Ends To Here  ========== //
 
 module.exports ={
     login,

@@ -4,25 +4,28 @@ const { ApiError } = require("../payload/ApiError");
 const status = require('http-status');
 const jwt = require('jsonwebtoken');
 
-const login = (email, password) =>{
+
+const login = async(email, password) =>{
     logger.info(`Authentication on email ${email} and password ${password}`);
 
-    let user = userModel.getUserByEmailAndPassword(email, password);
+    let user = await userModel.getUserByEmailAndPassword(email, password);
 
     if(user.length <=0) {
-      
-        throw new ApiError(status.UNAUTHORIZED, "Email or Password Is Incorrect");
+
+        let message = res.__('incorrectEmailOrPassError');
+        throw new ApiError(status.UNAUTHORIZED, message);
+        // res.status(status.UNAUTHORIZED)
+        // .send(new ApiResponse(status.UNAUTHORIZED, message));
 }
- 
-    
 
-// Generate jwt (json web token) to the user :1-object  2- time     3-private key
-  
-    let token = jwt.sign({user}, process.env.JWT_SECRET_KEY , { expiresIn: '1m' });
+  /**
+   *  Generate jwt (json web token) to the Right User
+   *  Which Consist: 1-object  2-private key  3-time
+   */
+    let token = jwt.sign({user}, process.env.JWT_SECRET_KEY , { expiresIn: '3m' });
+
    // console.log(token);
-
-    return {accessToken: token};
-    
+    return {accessToken: token};   
 }
 
 module.exports = {

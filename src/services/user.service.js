@@ -1,11 +1,13 @@
 const logger = require("../config/logger");
 const { userModel } = require('../models');
 
+
+// ========== Bussiness Logic Starts From Here  ========== //
+
 /**
- * 
- * check isIdExist or isEmailExist, if true throw error else create
+ * check isIdExist, if true throw error else create
  */
-const isIdExist = (id) => {
+const isIdExist = async(id) => {
     if(userModel.isIdExist(id)){
         logger.warn('This User Is Already Exists');   
         return true;         
@@ -13,8 +15,10 @@ const isIdExist = (id) => {
     return false;
 }  
 
-
-const isEmailExist = (email) => {
+/**
+ * check isEmailExist, if true throw error else create
+ */
+const isEmailExist = async(email) => {
     
     if(userModel.isEmailExist(email)){
         logger.warn('Trying to Create an Existed User Email');   
@@ -23,35 +27,38 @@ const isEmailExist = (email) => {
     return false;
 } 
 
-/**
- * 
- * @param {create} user 
- * @returns user
+// ========== Bussiness Logic Ends To Here  ========== //
+
+
+// ========== User API Model Calls Starts Here  ========== //
+
+/** 
+ * Give Call To Create User inside The Model
  */
-const createUser = async (user) => {
+const createUser = async(user) => {
     let userCreated = userModel.create(user);
-    return user;
+    return userCreated;
 }
 
-
-const updateUser = (user) => {
-    logger.info('User is being Updated');
-    
+/**
+ * Give Call To Update User inside the Model
+ */
+const updateUser = async(user) => {
     let userUpdated = userModel.update(user);
     return userUpdated;
 }
 
-
-const deleteUser = (user) => {
-    logger.info('User is being Deleted');
-
+/**
+ * Give Call To Delete User inside the Model
+ */
+const deleteUser = async(user) => {
     let deletedUser = userModel.userDelete(user);
     return deletedUser;
 }
 
 
 /**
- * @returns AllUsers from oracle db
+ * Give Call To Get All Users inside the Model
  */
 const getAllUsers = async () => {
     return userModel.getAllUsers();
@@ -59,19 +66,13 @@ const getAllUsers = async () => {
 }
 
 /**
- * @returns Single User from oracle db
+ * Give Call To Get Single User inside the Model - Oracle
  */
-const getUserById = (id) => {
+const getUserById = async (id) => {
     return userModel.getUserById(id);   
 }
 
-
-
-// const getUserById = (id) => {
-//     logger.info('User By Id is being Fetched');
-//     return userModel.getUserById(id);
-   
-// }
+// ========== User API Model Calls Ends Here  ========== //
 
 module.exports = {
     isIdExist,

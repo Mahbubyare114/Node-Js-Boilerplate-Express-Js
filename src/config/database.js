@@ -39,6 +39,7 @@ async function executeQuery(query){
   */
       let result = await connection.execute(query);
 
+      //return result;
       return util.parseDatabaseObject(result);
        // console.log(result);
     }

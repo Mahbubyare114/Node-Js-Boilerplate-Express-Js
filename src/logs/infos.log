@@ -169,3 +169,191 @@
 2021-11-07T12:30:07.458Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
 2021-11-07T12:30:11.725Z [BoilerPlate] [32minfo[39m: connected to the database
 2021-11-07T12:30:12.312Z [BoilerPlate] [31merror[39m: ORA-00904: "UNDEFINED": invalid identifier
+2021-11-07T14:53:44.036Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-07T14:53:57.339Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-07T14:53:58.536Z [BoilerPlate] [32minfo[39m: All Users Are Being Fetched
+2021-11-07T15:29:00.423Z [BoilerPlate] [31merror[39m: NJS-077: Oracle Client library has already been initialized
+2021-11-07T15:30:08.698Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-07T15:30:16.317Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-07T15:30:16.957Z [BoilerPlate] [31merror[39m: ORA-00904: "UNDEFINED": invalid identifier
+2021-11-07T15:30:43.987Z [BoilerPlate] [31merror[39m: NJS-077: Oracle Client library has already been initialized
+2021-11-07T15:30:57.427Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-07T15:31:02.232Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-07T15:31:03.408Z [BoilerPlate] [32minfo[39m: All Users Are Being Fetched
+2021-11-07T15:31:47.983Z [BoilerPlate] [32minfo[39m: A New User Is Being Created!
+2021-11-07T15:32:27.349Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-07T15:32:28.980Z [BoilerPlate] [32minfo[39m: A New User Is Being Created!
+2021-11-07T18:34:11.104Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-07T18:34:29.658Z [BoilerPlate] [32minfo[39m: Authentication on email mahbub@example.com and password mahbub123
+2021-11-07T18:34:32.675Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-07T18:34:33.333Z [BoilerPlate] [31merror[39m: ORA-00904: "MAHBUB123": invalid identifier
+2021-11-07T19:12:42.110Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-07T19:12:48.442Z [BoilerPlate] [32minfo[39m: Authentication on email mahbub@example.com and password mahbub123
+2021-11-07T19:13:12.482Z [BoilerPlate] [31merror[39m: ORA-12170: TNS:Connect timeout occurred
+2021-11-07T19:18:30.188Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-07T19:18:39.230Z [BoilerPlate] [32minfo[39m: Authentication on email mahbub@example.com and password mahbub123
+2021-11-07T19:19:04.483Z [BoilerPlate] [31merror[39m: ORA-12170: TNS:Connect timeout occurred
+2021-11-07T19:20:03.652Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-07T19:20:15.967Z [BoilerPlate] [32minfo[39m: Authentication on email mahbub@example.com and password mahbub123
+2021-11-07T19:20:18.701Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-07T19:20:19.295Z [BoilerPlate] [31merror[39m: ORA-00904: "MAHBUB123": invalid identifier
+2021-11-07T19:57:31.574Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-07T19:57:38.753Z [BoilerPlate] [32minfo[39m: Authentication on email mahbub@example.com and password mahbub123
+2021-11-07T19:57:41.415Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-07T19:57:42.012Z [BoilerPlate] [31merror[39m: ORA-00904: "MAHBUB123": invalid identifier
+2021-11-07T19:57:50.446Z [BoilerPlate] [32minfo[39m: Authentication on email mahbub@example.com and password mahbub1243
+2021-11-07T19:57:50.468Z [BoilerPlate] [31merror[39m: NJS-077: Oracle Client library has already been initialized
+2021-11-07T20:01:38.386Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-07T20:01:41.057Z [BoilerPlate] [32minfo[39m: Authentication on email Mahbub@gmail.com and password Mahbub123
+2021-11-07T20:01:43.826Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-07T20:01:44.443Z [BoilerPlate] [31merror[39m: ORA-00904: "MAHBUB123": invalid identifier
+2021-11-07T20:02:02.357Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-07T20:02:04.173Z [BoilerPlate] [32minfo[39m: Authentication on email Mahbub@gmail.com and password Mahbub123
+2021-11-07T20:02:06.822Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-07T20:02:07.445Z [BoilerPlate] [31merror[39m: ORA-00904: "MAHBUB123": invalid identifier
+2021-11-07T20:14:08.349Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-07T20:14:15.608Z [BoilerPlate] [32minfo[39m: Authentication on email Mahbub@gmail.com and password Mahbub123
+2021-11-07T20:14:18.301Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-07T20:14:18.943Z [BoilerPlate] [31merror[39m: ORA-00904: "MAHBUB123": invalid identifier
+2021-11-07T20:17:21.373Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-07T20:17:27.481Z [BoilerPlate] [32minfo[39m: Authentication on email Mahbub@gmail.com and password Mahbub123
+2021-11-07T20:17:30.307Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-07T20:17:30.923Z [BoilerPlate] [31merror[39m: ORA-00904: "MAHBUB123": invalid identifier
+2021-11-07T20:19:53.550Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-07T20:19:56.589Z [BoilerPlate] [32minfo[39m: Authentication on email Mahbub@gmail.com and password Mahbub123
+2021-11-07T20:19:59.149Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-07T20:19:59.735Z [BoilerPlate] [31merror[39m: ORA-00904: "MAHBUB123": invalid identifier
+2021-11-07T20:21:35.414Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-07T20:21:38.131Z [BoilerPlate] [32minfo[39m: Authentication on email Mahbub@gmail.com and password Mahbub123
+2021-11-07T20:21:40.783Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-07T20:21:41.356Z [BoilerPlate] [31merror[39m: ORA-00904: "MAHBUB123": invalid identifier
+2021-11-07T20:22:22.505Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-07T20:22:24.390Z [BoilerPlate] [32minfo[39m: Authentication on email Mahbub@gmail.com and password Mahbub123
+2021-11-07T20:22:36.045Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-07T20:22:36.633Z [BoilerPlate] [31merror[39m: ORA-00904: "MAHBUB123": invalid identifier
+2021-11-07T20:25:35.597Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-07T20:25:38.579Z [BoilerPlate] [32minfo[39m: Authentication on email Mahbub@gmail.com and password MAHBUB123
+2021-11-07T20:25:41.209Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-07T20:25:41.790Z [BoilerPlate] [31merror[39m: ORA-00904: "MAHBUB123": invalid identifier
+2021-11-07T20:27:01.332Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-07T20:27:04.754Z [BoilerPlate] [32minfo[39m: Authentication on email Mahbub@gmail.com and password MAHBUB123
+2021-11-07T20:27:07.363Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-07T20:27:07.946Z [BoilerPlate] [31merror[39m: ORA-00904: "MAHBUB123": invalid identifier
+2021-11-07T20:35:21.655Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-07T20:35:28.586Z [BoilerPlate] [32minfo[39m: Authentication on email Mahbub@gmail.com and password MAHBUB123
+2021-11-07T20:35:53.217Z [BoilerPlate] [31merror[39m: ORA-12170: TNS:Connect timeout occurred
+2021-11-07T20:36:27.561Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-07T20:36:33.293Z [BoilerPlate] [32minfo[39m: Authentication on email Mahbub@gmail.com and password MAHBUB123
+2021-11-07T20:36:35.919Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-07T20:36:36.535Z [BoilerPlate] [31merror[39m: ORA-00904: "MAHBUB123": invalid identifier
+2021-11-07T20:38:35.391Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-07T20:38:38.121Z [BoilerPlate] [32minfo[39m: Authentication on email Mahbub@gmail.com and password MAHBUB123
+2021-11-07T20:38:40.642Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-07T20:38:41.202Z [BoilerPlate] [31merror[39m: ORA-00904: "MAHBUB123": invalid identifier
+2021-11-07T20:40:03.070Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-07T20:40:28.922Z [BoilerPlate] [32minfo[39m: Calling Create User
+2021-11-07T20:40:31.424Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-07T20:40:31.760Z [BoilerPlate] [31merror[39m: Cannot read property 'forEach' of undefined
+2021-11-07T20:46:50.322Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-07T20:46:55.052Z [BoilerPlate] [32minfo[39m: Calling Create User
+2021-11-07T20:46:57.512Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-07T20:46:58.114Z [BoilerPlate] [31merror[39m: ORA-00001: unique constraint (ABDIKADIR.SYS_C0011150) violated
+2021-11-07T20:47:39.775Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-07T20:48:19.121Z [BoilerPlate] [32minfo[39m: Calling Create User
+2021-11-07T20:48:21.692Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-07T20:48:21.975Z [BoilerPlate] [31merror[39m: Cannot read property 'forEach' of undefined
+2021-11-07T20:48:53.840Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-07T20:48:56.901Z [BoilerPlate] [32minfo[39m: Calling Create User
+2021-11-07T20:48:59.454Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-07T20:48:59.753Z [BoilerPlate] [31merror[39m: Cannot read property 'forEach' of undefined
+2021-11-07T20:57:57.075Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-07T20:58:04.732Z [BoilerPlate] [32minfo[39m: Calling Create User
+2021-11-07T20:58:07.278Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-07T20:58:07.553Z [BoilerPlate] [31merror[39m: util.parseDatabaseObject is not a function
+2021-11-07T20:59:50.721Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-07T20:59:55.745Z [BoilerPlate] [32minfo[39m: Calling Create User
+2021-11-07T20:59:58.275Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-07T20:59:59.379Z [BoilerPlate] [32minfo[39m: A New User Is Being Created!
+2021-11-07T20:59:59.387Z [BoilerPlate] [31merror[39m: NJS-077: Oracle Client library has already been initialized
+2021-11-07T20:59:59.389Z [BoilerPlate] [33mwarn[39m: This User Is Already Exists
+2021-11-07T21:02:04.636Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-07T21:02:48.845Z [BoilerPlate] [32minfo[39m: Calling Create User
+2021-11-07T21:02:51.824Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-07T21:02:52.994Z [BoilerPlate] [32minfo[39m: A New User Is Being Created!
+2021-11-07T21:02:52.998Z [BoilerPlate] [31merror[39m: NJS-077: Oracle Client library has already been initialized
+2021-11-07T21:02:53.002Z [BoilerPlate] [33mwarn[39m: This User Is Already Exists
+2021-11-07T21:05:59.883Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-07T21:06:08.256Z [BoilerPlate] [33mwarn[39m: Someone Is Trying To Get Access Without Token!!
+2021-11-07T21:06:35.295Z [BoilerPlate] [32minfo[39m: Authentication on email Mahbub@gmail.com and password MAHBUB123
+2021-11-07T21:06:37.799Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-07T21:06:38.349Z [BoilerPlate] [31merror[39m: ORA-00904: "MAHBUB123": invalid identifier
+2021-11-07T21:13:15.124Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-07T21:13:22.000Z [BoilerPlate] [32minfo[39m: Authentication on email Mahbub@gmail.com and password MAHBUB123
+2021-11-07T21:13:25.422Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-07T21:13:25.974Z [BoilerPlate] [31merror[39m: ORA-00904: "MAHBUB123": invalid identifier
+2021-11-07T21:13:38.603Z [BoilerPlate] [32minfo[39m: Authentication on email Mahbub@gmail.com and password MAHBUB123
+2021-11-07T21:13:38.604Z [BoilerPlate] [31merror[39m: NJS-077: Oracle Client library has already been initialized
+2021-11-07T21:14:55.715Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-07T21:14:58.545Z [BoilerPlate] [32minfo[39m: Authentication on email Mahbub@gmail.com and password MAHBUB123
+2021-11-07T21:15:01.137Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-07T21:15:01.695Z [BoilerPlate] [31merror[39m: ORA-00904: "MAHBUB123": invalid identifier
+2021-11-07T21:18:02.658Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-07T21:18:05.450Z [BoilerPlate] [32minfo[39m: Authentication on email Mahbub@gmail.com and password MAHBUB123
+2021-11-07T21:18:07.997Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-07T21:18:08.591Z [BoilerPlate] [31merror[39m: ORA-00904: "MAHBUB123": invalid identifier
+2021-11-07T21:18:52.903Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-07T21:18:53.401Z [BoilerPlate] [32minfo[39m: Authentication on email Mahbub@gmail.com and password MAHBUB123
+2021-11-07T21:19:02.614Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-07T21:19:03.189Z [BoilerPlate] [31merror[39m: ORA-00904: "MAHBUB123": invalid identifier
+2021-11-07T21:22:39.782Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-07T21:22:45.275Z [BoilerPlate] [33mwarn[39m: Someone Is Trying To Get Access Without Token!!
+2021-11-07T21:23:19.932Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-07T21:23:28.627Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-07T21:23:29.817Z [BoilerPlate] [32minfo[39m: All Users Are Being Fetched
+2021-11-07T21:25:22.106Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-07T21:25:33.438Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-07T21:25:34.587Z [BoilerPlate] [32minfo[39m: All Users Are Being Fetched
+2021-11-07T21:28:31.677Z [BoilerPlate] [31merror[39m: NJS-077: Oracle Client library has already been initialized
+2021-11-07T21:31:27.862Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-07T21:31:31.728Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-07T21:31:32.877Z [BoilerPlate] [32minfo[39m: All Users Are Being Fetched
+2021-11-07T21:32:16.491Z [BoilerPlate] [31merror[39m: NJS-077: Oracle Client library has already been initialized
+2021-11-07T21:32:32.374Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-07T21:32:36.011Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-07T21:32:36.565Z [BoilerPlate] [31merror[39m: ORA-00904: "UNDEFINED": invalid identifier
+2021-11-07T21:33:46.303Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-07T21:33:52.147Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-07T21:33:52.975Z [BoilerPlate] [32minfo[39m: A User By Id Is Being Fetched
+2021-11-07T21:35:11.349Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-07T21:35:18.699Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-07T21:35:19.583Z [BoilerPlate] [32minfo[39m: A User By Id Is Being Fetched
+2021-11-07T21:37:01.008Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-07T21:37:07.171Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-07T21:37:07.721Z [BoilerPlate] [31merror[39m: ORA-00904: "UNDEFINED": invalid identifier
+2021-11-07T21:37:57.262Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-07T21:38:05.058Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-07T21:38:05.695Z [BoilerPlate] [31merror[39m: ORA-00911: invalid character
+2021-11-07T21:38:54.306Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-07T21:39:01.476Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-07T21:39:02.639Z [BoilerPlate] [32minfo[39m: A User By Id Is Being Fetched
+2021-11-07T21:39:43.554Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-07T21:39:50.287Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-07T21:39:51.406Z [BoilerPlate] [32minfo[39m: A User By Id Is Being Fetched
+2021-11-07T21:42:52.222Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-07T21:42:57.929Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-07T21:42:58.702Z [BoilerPlate] [32minfo[39m: A User By Id Is Being Fetched
+2021-11-07T21:43:15.016Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-07T21:44:11.446Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-07T21:44:12.309Z [BoilerPlate] [32minfo[39m: A User By Id Is Being Fetched
+2021-11-07T21:45:44.010Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-07T21:46:05.041Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-07T21:46:05.592Z [BoilerPlate] [31merror[39m: ORA-00904: "UNDEFINED": invalid identifier
+2021-11-07T21:46:57.865Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-07T21:47:06.565Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-07T21:47:07.168Z [BoilerPlate] [31merror[39m: ORA-00904: "ID": invalid identifier
+2021-11-07T21:47:31.594Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-07T21:47:36.152Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-07T21:47:36.698Z [BoilerPlate] [31merror[39m: ORA-00904: "ID": invalid identifier
+2021-11-07T21:48:30.689Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-07T21:48:37.333Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-07T21:48:38.425Z [BoilerPlate] [32minfo[39m: A User By Id Is Being Fetched

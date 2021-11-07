@@ -75,12 +75,12 @@ app.use((req, res , next) => {
 res.status(status).send(new ApiError(status, error));
 });
 
-// All The Exceptions Error Handling (Custom Error Middleware)
+// All The Exceptions Error Handling (Custom Error and System Error Middleware)
 
-// app.use((err, req, res, next) => {
-//   res.status(err.status).send(err);
-//   next();
-// })
+app.use((err, req, res, next) => {
+  res.status(err.status).send(err);
+  next();
+})
 
 
 

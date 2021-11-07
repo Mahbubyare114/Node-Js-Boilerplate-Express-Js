@@ -15,3 +15,45 @@
 2021-11-07T12:29:16.872Z [BoilerPlate] [31merror[39m: NJS-077: Oracle Client library has already been initialized
 2021-11-07T12:29:40.699Z [BoilerPlate] [31merror[39m: ORA-00904: "UNDEFINED": invalid identifier
 2021-11-07T12:30:12.312Z [BoilerPlate] [31merror[39m: ORA-00904: "UNDEFINED": invalid identifier
+2021-11-07T15:29:00.423Z [BoilerPlate] [31merror[39m: NJS-077: Oracle Client library has already been initialized
+2021-11-07T15:30:16.957Z [BoilerPlate] [31merror[39m: ORA-00904: "UNDEFINED": invalid identifier
+2021-11-07T15:30:43.987Z [BoilerPlate] [31merror[39m: NJS-077: Oracle Client library has already been initialized
+2021-11-07T18:34:33.333Z [BoilerPlate] [31merror[39m: ORA-00904: "MAHBUB123": invalid identifier
+2021-11-07T19:13:12.482Z [BoilerPlate] [31merror[39m: ORA-12170: TNS:Connect timeout occurred
+2021-11-07T19:19:04.483Z [BoilerPlate] [31merror[39m: ORA-12170: TNS:Connect timeout occurred
+2021-11-07T19:20:19.295Z [BoilerPlate] [31merror[39m: ORA-00904: "MAHBUB123": invalid identifier
+2021-11-07T19:57:42.012Z [BoilerPlate] [31merror[39m: ORA-00904: "MAHBUB123": invalid identifier
+2021-11-07T19:57:50.468Z [BoilerPlate] [31merror[39m: NJS-077: Oracle Client library has already been initialized
+2021-11-07T20:01:44.443Z [BoilerPlate] [31merror[39m: ORA-00904: "MAHBUB123": invalid identifier
+2021-11-07T20:02:07.445Z [BoilerPlate] [31merror[39m: ORA-00904: "MAHBUB123": invalid identifier
+2021-11-07T20:14:18.943Z [BoilerPlate] [31merror[39m: ORA-00904: "MAHBUB123": invalid identifier
+2021-11-07T20:17:30.923Z [BoilerPlate] [31merror[39m: ORA-00904: "MAHBUB123": invalid identifier
+2021-11-07T20:19:59.735Z [BoilerPlate] [31merror[39m: ORA-00904: "MAHBUB123": invalid identifier
+2021-11-07T20:21:41.356Z [BoilerPlate] [31merror[39m: ORA-00904: "MAHBUB123": invalid identifier
+2021-11-07T20:22:36.633Z [BoilerPlate] [31merror[39m: ORA-00904: "MAHBUB123": invalid identifier
+2021-11-07T20:25:41.790Z [BoilerPlate] [31merror[39m: ORA-00904: "MAHBUB123": invalid identifier
+2021-11-07T20:27:07.946Z [BoilerPlate] [31merror[39m: ORA-00904: "MAHBUB123": invalid identifier
+2021-11-07T20:35:53.217Z [BoilerPlate] [31merror[39m: ORA-12170: TNS:Connect timeout occurred
+2021-11-07T20:36:36.535Z [BoilerPlate] [31merror[39m: ORA-00904: "MAHBUB123": invalid identifier
+2021-11-07T20:38:41.202Z [BoilerPlate] [31merror[39m: ORA-00904: "MAHBUB123": invalid identifier
+2021-11-07T20:40:31.760Z [BoilerPlate] [31merror[39m: Cannot read property 'forEach' of undefined
+2021-11-07T20:46:58.114Z [BoilerPlate] [31merror[39m: ORA-00001: unique constraint (ABDIKADIR.SYS_C0011150) violated
+2021-11-07T20:48:21.975Z [BoilerPlate] [31merror[39m: Cannot read property 'forEach' of undefined
+2021-11-07T20:48:59.753Z [BoilerPlate] [31merror[39m: Cannot read property 'forEach' of undefined
+2021-11-07T20:58:07.553Z [BoilerPlate] [31merror[39m: util.parseDatabaseObject is not a function
+2021-11-07T20:59:59.387Z [BoilerPlate] [31merror[39m: NJS-077: Oracle Client library has already been initialized
+2021-11-07T21:02:52.998Z [BoilerPlate] [31merror[39m: NJS-077: Oracle Client library has already been initialized
+2021-11-07T21:06:38.349Z [BoilerPlate] [31merror[39m: ORA-00904: "MAHBUB123": invalid identifier
+2021-11-07T21:13:25.974Z [BoilerPlate] [31merror[39m: ORA-00904: "MAHBUB123": invalid identifier
+2021-11-07T21:13:38.604Z [BoilerPlate] [31merror[39m: NJS-077: Oracle Client library has already been initialized
+2021-11-07T21:15:01.695Z [BoilerPlate] [31merror[39m: ORA-00904: "MAHBUB123": invalid identifier
+2021-11-07T21:18:08.591Z [BoilerPlate] [31merror[39m: ORA-00904: "MAHBUB123": invalid identifier
+2021-11-07T21:19:03.189Z [BoilerPlate] [31merror[39m: ORA-00904: "MAHBUB123": invalid identifier
+2021-11-07T21:28:31.677Z [BoilerPlate] [31merror[39m: NJS-077: Oracle Client library has already been initialized
+2021-11-07T21:32:16.491Z [BoilerPlate] [31merror[39m: NJS-077: Oracle Client library has already been initialized
+2021-11-07T21:32:36.565Z [BoilerPlate] [31merror[39m: ORA-00904: "UNDEFINED": invalid identifier
+2021-11-07T21:37:07.721Z [BoilerPlate] [31merror[39m: ORA-00904: "UNDEFINED": invalid identifier
+2021-11-07T21:38:05.695Z [BoilerPlate] [31merror[39m: ORA-00911: invalid character
+2021-11-07T21:46:05.592Z [BoilerPlate] [31merror[39m: ORA-00904: "UNDEFINED": invalid identifier
+2021-11-07T21:47:07.168Z [BoilerPlate] [31merror[39m: ORA-00904: "ID": invalid identifier
+2021-11-07T21:47:36.698Z [BoilerPlate] [31merror[39m: ORA-00904: "ID": invalid identifier
