@@ -5,3 +5,33 @@
 2021-11-04T21:58:24.656Z [BoilerPlate] [31merror[39m: NJS-077: Oracle Client library has already been initialized
 2021-11-04T21:58:30.796Z [BoilerPlate] [31merror[39m: NJS-077: Oracle Client library has already been initialized
 2021-11-04T22:01:44.070Z [BoilerPlate] [31merror[39m: NJS-077: Oracle Client library has already been initialized
+2021-11-07T08:19:03.235Z [BoilerPlate] [31merror[39m: NJS-077: Oracle Client library has already been initialized
+2021-11-07T08:40:30.672Z [BoilerPlate] [31merror[39m: NJS-077: Oracle Client library has already been initialized
+2021-11-07T09:27:24.242Z [BoilerPlate] [33mwarn[39m: This User Is Already Exists
+2021-11-07T09:28:10.740Z [BoilerPlate] [33mwarn[39m: This User Is Already Exists
+2021-11-07T09:53:16.971Z [BoilerPlate] [33mwarn[39m: This User Is Already Exists
+2021-11-07T09:53:46.765Z [BoilerPlate] [33mwarn[39m: This User Is Already Exists
+2021-11-07T09:54:10.456Z [BoilerPlate] [33mwarn[39m: This User Is Already Exists
+2021-11-07T10:05:16.100Z [BoilerPlate] [33mwarn[39m: Trying To Update User That Does't Exist
+2021-11-07T10:06:17.493Z [BoilerPlate] [33mwarn[39m: Trying To Update User That Does't Exist
+2021-11-07T10:07:35.242Z [BoilerPlate] [33mwarn[39m: Trying To Update User That Does't Exist
+2021-11-07T10:08:00.141Z [BoilerPlate] [33mwarn[39m: Trying To Update User That Does't Exist
+2021-11-07T10:08:24.778Z [BoilerPlate] [33mwarn[39m: Trying To Update User That Does't Exist
+2021-11-07T10:08:48.798Z [BoilerPlate] [33mwarn[39m: This User Is Already Exists
+2021-11-07T10:11:15.100Z [BoilerPlate] [33mwarn[39m: This User Is Already Exists
+2021-11-07T10:11:34.191Z [BoilerPlate] [33mwarn[39m: Trying To Update User That Does't Exist
+2021-11-07T10:26:25.846Z [BoilerPlate] [33mwarn[39m: Trying To Update User That Does't Exist
+2021-11-07T10:26:43.457Z [BoilerPlate] [33mwarn[39m: Trying To Update User That Does't Exist
+2021-11-07T10:27:03.849Z [BoilerPlate] [33mwarn[39m: This User Is Already Exists
+2021-11-07T10:27:21.237Z [BoilerPlate] [33mwarn[39m: This User Is Already Exists
+2021-11-07T10:34:00.005Z [BoilerPlate] [33mwarn[39m: This User Is Already Exists
+2021-11-07T10:34:24.419Z [BoilerPlate] [33mwarn[39m: This User Is Already Exists
+2021-11-07T10:34:37.271Z [BoilerPlate] [33mwarn[39m: Trying To Update User That Does't Exist
+2021-11-07T10:35:55.274Z [BoilerPlate] [31merror[39m: NJS-077: Oracle Client library has already been initialized
+2021-11-07T12:12:44.989Z [BoilerPlate] [31merror[39m: ORA-00904: "UNDEFINED": invalid identifier
+2021-11-07T12:13:42.858Z [BoilerPlate] [31merror[39m: ORA-00904: "UNDEFINED": invalid identifier
+2021-11-07T12:16:20.315Z [BoilerPlate] [31merror[39m: ORA-00904: "UNDEFINED": invalid identifier
+2021-11-07T12:28:23.354Z [BoilerPlate] [31merror[39m: ORA-00904: "UNDEFINED": invalid identifier
+2021-11-07T12:29:16.872Z [BoilerPlate] [31merror[39m: NJS-077: Oracle Client library has already been initialized
+2021-11-07T12:29:40.699Z [BoilerPlate] [31merror[39m: ORA-00904: "UNDEFINED": invalid identifier
+2021-11-07T12:30:12.312Z [BoilerPlate] [31merror[39m: ORA-00904: "UNDEFINED": invalid identifier

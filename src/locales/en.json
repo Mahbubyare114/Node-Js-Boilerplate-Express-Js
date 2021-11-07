@@ -3,5 +3,12 @@
     "amountTransfer" : "your amount has been transfered",
     "loginSuccess"   : "You are logged in",
     "notImplemented" : "Not Implemented",
-    "allUsers"       : "All Users Are Here"
+    "allUsers"       : "All Users Are Here",
+    "singleUser"     : "Successfuly Fetched One User",
+    "notExist"       : "User Id Doesn't Exist",
+    "IdExist"        : "User is already Exist",
+    "userUpdated"    : "User Updated Successfully",
+    "userCreated"    : "User is Created Successfully",
+    "userDeleted"    : "User is Deleted Successfully",
+    "internalErrorMsg" : "Something We nt Wrong!"
 }

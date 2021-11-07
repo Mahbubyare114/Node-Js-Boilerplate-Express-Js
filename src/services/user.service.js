@@ -45,7 +45,7 @@ const updateUser = (user) => {
 const deleteUser = (user) => {
     logger.info('User is being Deleted');
 
-    let deletedUser = userModel.userdelete(user);
+    let deletedUser = userModel.userDelete(user);
     return deletedUser;
 }
 
@@ -58,11 +58,20 @@ const getAllUsers = async () => {
    
 }
 
+/**
+ * @returns Single User from oracle db
+ */
 const getUserById = (id) => {
-    logger.info('User By Id is being Fetched');
-    return userModel.getUserById(id);
-   
+    return userModel.getUserById(id);   
 }
+
+
+
+// const getUserById = (id) => {
+//     logger.info('User By Id is being Fetched');
+//     return userModel.getUserById(id);
+   
+// }
 
 module.exports = {
     isIdExist,

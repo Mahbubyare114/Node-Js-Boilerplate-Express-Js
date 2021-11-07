@@ -77,3 +77,95 @@
 2021-11-05T07:49:11.248Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
 2021-11-05T07:49:15.636Z [BoilerPlate] [32minfo[39m: Authentication on email mahbub@example.com and password mahbub123
 2021-11-05T07:49:46.530Z [BoilerPlate] [32minfo[39m: Authentication on email mahbub@example.com and password mahbub123
+2021-11-06T18:05:00.151Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-06T18:06:48.395Z [BoilerPlate] [32minfo[39m: Authentication on email mahbub@example.com and password mahbub123
+2021-11-06T18:07:24.349Z [BoilerPlate] [32minfo[39m: Authentication on email mahbub@example.com and password mahbub123
+2021-11-06T18:07:57.996Z [BoilerPlate] [32minfo[39m: Authentication on email mahbub@example.com and password mahbub123
+2021-11-06T18:10:07.677Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-06T18:10:08.969Z [BoilerPlate] [32minfo[39m: All Users Are Being Fetched
+2021-11-07T08:19:03.235Z [BoilerPlate] [31merror[39m: NJS-077: Oracle Client library has already been initialized
+2021-11-07T08:19:29.886Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-07T08:40:11.127Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-07T08:40:12.308Z [BoilerPlate] [32minfo[39m: All Users Are Being Fetched
+2021-11-07T08:40:30.672Z [BoilerPlate] [31merror[39m: NJS-077: Oracle Client library has already been initialized
+2021-11-07T08:41:06.381Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-07T08:41:36.309Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-07T08:41:37.469Z [BoilerPlate] [32minfo[39m: All Users Are Being Fetched
+2021-11-07T08:41:50.239Z [BoilerPlate] [32minfo[39m: Authentication on email mahbub@example.com and password mahbub123
+2021-11-07T08:42:06.072Z [BoilerPlate] [32minfo[39m: Authentication on email mahbub@example.com and password mahbub123
+2021-11-07T09:07:50.321Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-07T09:08:05.466Z [BoilerPlate] [32minfo[39m: Authentication on email mahbub@example.com and password mahbub1243
+2021-11-07T09:08:29.994Z [BoilerPlate] [32minfo[39m: Authentication on email mahbub@example.com and password mahbub123
+2021-11-07T09:17:56.515Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-07T09:21:43.041Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-07T09:26:17.574Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-07T09:26:51.841Z [BoilerPlate] [32minfo[39m: Calling Create User
+2021-11-07T09:26:51.843Z [BoilerPlate] [32minfo[39m: A New User Is Being Created!
+2021-11-07T09:27:24.240Z [BoilerPlate] [32minfo[39m: Calling Create User
+2021-11-07T09:27:24.242Z [BoilerPlate] [33mwarn[39m: This User Is Already Exists
+2021-11-07T09:28:10.739Z [BoilerPlate] [32minfo[39m: Calling Create User
+2021-11-07T09:28:10.740Z [BoilerPlate] [33mwarn[39m: This User Is Already Exists
+2021-11-07T09:53:16.970Z [BoilerPlate] [32minfo[39m: Calling Create User
+2021-11-07T09:53:16.971Z [BoilerPlate] [33mwarn[39m: This User Is Already Exists
+2021-11-07T09:53:46.764Z [BoilerPlate] [32minfo[39m: Calling Create User
+2021-11-07T09:53:46.765Z [BoilerPlate] [33mwarn[39m: This User Is Already Exists
+2021-11-07T09:54:10.455Z [BoilerPlate] [32minfo[39m: Calling Create User
+2021-11-07T09:54:10.456Z [BoilerPlate] [33mwarn[39m: This User Is Already Exists
+2021-11-07T10:00:21.647Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-07T10:01:11.778Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-07T10:05:10.529Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-07T10:05:16.100Z [BoilerPlate] [33mwarn[39m: Trying To Update User That Does't Exist
+2021-11-07T10:06:17.493Z [BoilerPlate] [33mwarn[39m: Trying To Update User That Does't Exist
+2021-11-07T10:07:35.242Z [BoilerPlate] [33mwarn[39m: Trying To Update User That Does't Exist
+2021-11-07T10:08:00.141Z [BoilerPlate] [33mwarn[39m: Trying To Update User That Does't Exist
+2021-11-07T10:08:24.778Z [BoilerPlate] [33mwarn[39m: Trying To Update User That Does't Exist
+2021-11-07T10:08:48.798Z [BoilerPlate] [33mwarn[39m: This User Is Already Exists
+2021-11-07T10:08:48.800Z [BoilerPlate] [32minfo[39m: User is being Updated
+2021-11-07T10:10:54.914Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-07T10:11:15.100Z [BoilerPlate] [33mwarn[39m: This User Is Already Exists
+2021-11-07T10:11:15.102Z [BoilerPlate] [32minfo[39m: User is being Updated
+2021-11-07T10:11:34.191Z [BoilerPlate] [33mwarn[39m: Trying To Update User That Does't Exist
+2021-11-07T10:26:18.085Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-07T10:26:25.846Z [BoilerPlate] [33mwarn[39m: Trying To Update User That Does't Exist
+2021-11-07T10:26:43.457Z [BoilerPlate] [33mwarn[39m: Trying To Update User That Does't Exist
+2021-11-07T10:27:03.849Z [BoilerPlate] [33mwarn[39m: This User Is Already Exists
+2021-11-07T10:27:03.850Z [BoilerPlate] [32minfo[39m: User is being Updated
+2021-11-07T10:27:21.237Z [BoilerPlate] [33mwarn[39m: This User Is Already Exists
+2021-11-07T10:27:21.238Z [BoilerPlate] [32minfo[39m: User is being Updated
+2021-11-07T10:27:55.429Z [BoilerPlate] [32minfo[39m: Calling Create User
+2021-11-07T10:27:55.430Z [BoilerPlate] [32minfo[39m: A New User Is Being Created!
+2021-11-07T10:33:39.932Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-07T10:33:47.403Z [BoilerPlate] [32minfo[39m: Calling Create User
+2021-11-07T10:33:47.404Z [BoilerPlate] [32minfo[39m: A New User Is Being Created!
+2021-11-07T10:34:00.004Z [BoilerPlate] [32minfo[39m: Calling Create User
+2021-11-07T10:34:00.005Z [BoilerPlate] [33mwarn[39m: This User Is Already Exists
+2021-11-07T10:34:24.419Z [BoilerPlate] [33mwarn[39m: This User Is Already Exists
+2021-11-07T10:34:24.420Z [BoilerPlate] [32minfo[39m: User is being Updated
+2021-11-07T10:34:37.271Z [BoilerPlate] [33mwarn[39m: Trying To Update User That Does't Exist
+2021-11-07T10:35:09.459Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-07T10:35:10.727Z [BoilerPlate] [32minfo[39m: All Users Are Being Fetched
+2021-11-07T10:35:55.274Z [BoilerPlate] [31merror[39m: NJS-077: Oracle Client library has already been initialized
+2021-11-07T10:36:17.674Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-07T10:36:23.488Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-07T10:36:24.660Z [BoilerPlate] [32minfo[39m: All Users Are Being Fetched
+2021-11-07T11:11:23.252Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-07T11:12:40.394Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-07T12:12:00.062Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-07T12:12:44.346Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-07T12:12:44.989Z [BoilerPlate] [31merror[39m: ORA-00904: "UNDEFINED": invalid identifier
+2021-11-07T12:13:33.634Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-07T12:13:42.188Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-07T12:13:42.858Z [BoilerPlate] [31merror[39m: ORA-00904: "UNDEFINED": invalid identifier
+2021-11-07T12:16:01.819Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-07T12:16:19.757Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-07T12:16:20.315Z [BoilerPlate] [31merror[39m: ORA-00904: "UNDEFINED": invalid identifier
+2021-11-07T12:28:09.685Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-07T12:28:22.797Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-07T12:28:23.354Z [BoilerPlate] [31merror[39m: ORA-00904: "UNDEFINED": invalid identifier
+2021-11-07T12:29:16.872Z [BoilerPlate] [31merror[39m: NJS-077: Oracle Client library has already been initialized
+2021-11-07T12:29:35.910Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-07T12:29:40.090Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-07T12:29:40.699Z [BoilerPlate] [31merror[39m: ORA-00904: "UNDEFINED": invalid identifier
+2021-11-07T12:30:07.458Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-07T12:30:11.725Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-07T12:30:12.312Z [BoilerPlate] [31merror[39m: ORA-00904: "UNDEFINED": invalid identifier

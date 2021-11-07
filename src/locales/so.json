@@ -2,5 +2,12 @@
     "amountTransfer" : "Lacagtaada waa la wareejiyay",
     "loginSuccess"   : "waad soo gashay",
     "notImplemented" : "Lama Fulin",
-    "allUsers"       : "Isticmaalayaasha oo dhan waa kuwan"
+    "allUsers"       : "Isticmaalayaasha oo dhan waa kuwan",
+    "singleUser"     : "Successfuly Fetched One User",
+    "notExist"       : "Aqoonsiga isticmaaluhu ma jiro",
+    "IdExist"        : "Aqoonsiga isticmaaluhu waa uu jiraa",
+    "userCreated"    : "Isticmaalaha si guul leh ayaa loo abuuray",
+    "userUpdated"    : "Isticmaalaha si guul leh ayaa loo cusboonaysiiyay",
+    "userDeleted"    : "Isticmaalaha si guul leh ayaa loo tirtiray",
+    "internalErrorMsg" : "Waxbaa qaldamay!"
 }

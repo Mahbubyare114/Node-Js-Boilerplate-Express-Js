@@ -2,5 +2,12 @@
     "amountTransfer" : "تم تحويل المبلغ الخاص بك",
     "loginSuccess"   : "لقد سجلت الدخول",
     "notImplemented" : "لم تنفذ",
-    "allUsers"       : "جميع المستخدمين هنا"
+    "allUsers"       : "جميع المستخدمين هنا",
+    "singleUser"     : "Successfuly Fetched One User",
+    "notExist"       : "معرف المستخدم غير موجود",
+    "IdExist"        : "معرف المستخدم موجود بالفعل",
+    "userCreated"    : "تم إنشاء المستخدم بنجاح",
+    "userUpdated"    : "تم تحديث المستخدم بنجاح",
+    "userDeleted"    : "تم حذف المستخدم بنجاح",
+    "internalErrorMsg" : "هناك خطأ ما!"
 }

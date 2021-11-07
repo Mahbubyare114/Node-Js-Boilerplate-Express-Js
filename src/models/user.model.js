@@ -24,7 +24,7 @@ const users = [{
     "role" : "Admin"
 }];
 
-// functions
+// get all users from the oracle db
 const getAllUsers = async () => {
     let query = `SELECT * FROM USERS`;
     let result = await db.executeQuery(query);
@@ -35,11 +35,20 @@ const getAllUsers = async () => {
 
 }
 
+// get a single user from the oracle db
+const getUserById = async(id) => {
 
+    let query = `SELECT * FROM USERS WHERE id= ${id}`;
+    let result = await db.executeQuery(query);
 
-const getUserById = (id) => {
-    return users.filter(u => u.id === id);
+    logger.info('A Single User Is Being Fetched');
+    return result;
 }
+
+
+// const getUserById = (id) => {
+//     return users.filter(u => u.id === id);
+// }
 
 const getUserByEmailAndPassword = (email, password) => {
     // throw new  ApiError(403, "Database Query Failed");
@@ -47,15 +56,12 @@ const getUserByEmailAndPassword = (email, password) => {
     return users.filter(u => u.email === email && u.password === password);
 }
 
-const create = async (user) => {
-    let query = 
-    `INSERT INTO USERS VALUES (4,'Dadir','Isse','Dadir@gmail.com','Dadir123')`;
-    let result = await db.executeQuery(query);
+const create = (user) => {
 
     logger.info('A New User Is Being Created!');
-    return result;
-    // users.push(user);
-    // return true;
+
+    users.push(user);
+    return true;
 }
 
 const update = (user) => {
@@ -63,11 +69,8 @@ const update = (user) => {
     userFilter.map((value, index) =>{
         userFilter[index].firstName = user.firstName;
         userFilter[index].lastName = user.lastName;
-        userFilter[index].age = user.age;
-        userFilter[index].title = user.title;
-        userFilter[index].password = user.password;
-       userFilter[index].confirmPassword = user.confirmPassword;    
-       userFilter[index].role = user.role;
+        userFilter[index].password = user.password; 
+        userFilter[index].role = user.role;
     });
 
     return true;
@@ -75,7 +78,7 @@ const update = (user) => {
 
 }
 
-const userdelete = (user) => {
+const userDelete = (user) => {
     userFilter = users.filter(u => u.id == user.id);
     userFilter.map((value, index) =>{
     users.splice(index, 1);
@@ -104,5 +107,5 @@ module.exports = {
     update,
     isIdExist,
     isEmailExist,
-    userdelete
+    userDelete
 }

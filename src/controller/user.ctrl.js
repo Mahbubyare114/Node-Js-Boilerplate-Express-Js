@@ -9,7 +9,7 @@ const {handleAsync} = require('../utils/util');
 
 // create a new user
 const create = handleAsync( async(req, res) => {
-
+    
     logger.info('Calling Create User');
    
     // get the user
@@ -17,9 +17,10 @@ const create = handleAsync( async(req, res) => {
 
     // check if user already exist
     if(userServices.isIdExist(user.id)){
+        let message = res.__('IdExist');
        
          return res.status(status.NOT_ACCEPTABLE)
-        .send(new ApiError (status.NOT_ACCEPTABLE ,"User is already Exist!!"));          
+        .send(new ApiError (status.NOT_ACCEPTABLE , message));          
     }
 
     // if(userServices.isEmailExist(user.email)){
@@ -28,17 +29,22 @@ const create = handleAsync( async(req, res) => {
     //    .send(new ApiError (status.NOT_ACCEPTABLE ,"User Email already Exist!!"));          
     // }
 
-    // if not exist then create it
+  
 
-
+  // if not exist then create it
     let createUserStatus = await userServices.createUser(user);
     if(createUserStatus){
+        let userCreatedMsg = res.__('userCreated');
+
         return res.status(status.OK)
-        .send(new ApiResponse(status.OK, 'User is Created Successfully'));
+        .send(new ApiResponse(status.OK, userCreatedMsg));
         // .send({message : "User is Created Successfully"});
     }
-        return res.status(status.INTERNAL_SERVER_ERROR)
-        .send(new ApiError(status.INTERNAL_SERVER_ERROR, "Something Went Wrong!!"));
+
+    let messageInternalError = res.__('internalErrorMsg'); // read res from locales
+    return res.status(status.INTERNAL_SERVER_ERROR)
+    .send(new ApiError(status.INTERNAL_SERVER_ERROR, messageInternalError));
+        
     }
 );
 
@@ -48,18 +54,26 @@ const update = (req, res) => {
         let user = req.body;
         // console.log(user);
 
-// check if user id already exist
+// check if user id is not exist
     if(!userServices.isIdExist(user.id)){
-        return res.status(status.NOT_ACCEPTABLE)
-       .send(new ApiError(status.NOT_ACCEPTABLE, "This User Id Does Not Exist: " +user.id));          
-   }
+        logger.warn("Trying To Update User That Does't Exist");
+        let message = res.__('notExist');
 
+        return res.status(status.NOT_ACCEPTABLE)
+       .send(new ApiError(status.NOT_ACCEPTABLE, message +' : ' +user.id));          
+   }
+ 
    let updatedUser = userServices.updateUser(user);
     if(updatedUser){
+
+        let message = res.__('userUpdated');
+
         return res.status(status.OK)
-        .send(new ApiResponse(status.OK, "User Updated Successfully"));
+        .send(new ApiResponse(status.OK, message));
     }
-    res.send(new ApiError(status.INTERNAL_SERVER_ERROR, 'Something Went Wrong!!'));
+    
+    let messageInternalError = res.__('internalErrorMsg'); // read res from locales
+    res.send(new ApiError(status.INTERNAL_SERVER_ERROR, messageInternalError));
 }
 
 
@@ -71,15 +85,19 @@ let user = req.body;
 
 // check if user already exist
 if(!userServices.isIdExist(user.id)){
+
+    let message = res.__('notExist');
    return res.status(status.NOT_ACCEPTABLE)
-   .send(new ApiError(status.NOT_ACCEPTABLE, "This User Id Doesn't Exist: "+user.id));          
+   .send(new ApiError(status.NOT_ACCEPTABLE, message +user.id));          
 }
 
 // delete user
 let deletedUser = userServices.deleteUser(user);
 if(deletedUser){
+
+    let deletedUserMsg = res.__('userDeleted');
     return res.status(status.OK)
-    .send(new ApiResponse(status.OK, "User is Deleted Successfully"));
+    .send(new ApiResponse(status.OK, deletedUserMsg));
     } 
 }
 
@@ -107,26 +125,41 @@ const testCall = handleAsync( async (req, res) => {
  });
 
 // get user by it's id
- /* const getUserById = (req, res) => {
-   let userId = req.params.getUserById;
-  
-   let users = userServices.getUserById(userId.id);
-   // console.log(users);
- 
-   if (userId === users.id){
-    res.send(users);
-   }
-   res.end(new ApiError(status.NOT_FOUND, 'Not Found User Id'));
-  
-}
+  const getUserById = handleAsync(async (req, res) => {
+    let message = res.__('singleUser'); // i18n support for res
 
-*/
+    let user = await userServices.getUserById(req.params.userId)
+    if(user.length){
+        response = new ApiResponse(res.status, message , user) 
+
+        console.log(user);
+    }
+    let notExistMessage = res.__('notExist');  // read msg from locales notExist
+    throw new ApiError(status.NOT_ACCEPTABLE, notExistMessage)
+                                       
+    // res.send(response) 
+});
+    
+//   let userId = req.params.getUserById();
+  
+//    let users = userServices.getUserById(userId.id);
+//    // console.log(users);
+ 
+//    if (userId === users.id){
+//     res.send(users);
+//    }
+//    let notFoundErrorMsg = res.__('notExist');
+//    res.end(new ApiError(status.NOT_FOUND, notFoundErrorMsg));
+  
+// }
+
+
 
 module.exports = {
     create,
     update,
     getAllUsers,
-  //  getUserById,
+    getUserById,
     delet,
     testCall
 
