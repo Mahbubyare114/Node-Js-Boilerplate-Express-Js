@@ -6,9 +6,11 @@
     "singleUser"     : "Successfuly Fetched One User",
     "notExist"       : "Aqoonsiga isticmaaluhu ma jiro",
     "IdExist"        : "Aqoonsiga isticmaaluhu waa uu jiraa",
-    "userCreated"    : "Isticmaalaha si guul leh ayaa loo abuuray",
+    "emailExists"    : "Emailkan isticmaale ayaa horay u jiray",
     "userUpdated"    : "Isticmaalaha si guul leh ayaa loo cusboonaysiiyay",
     "userDeleted"    : "Isticmaalaha si guul leh ayaa loo tirtiray",
     "internalErrorMsg" : "Waxbaa qaldamay!",
-    "incorrectEmailOrPassError" : "Email ka ama Password ka Waa Uu Khaldanyahay!"
+    "incorrectEmailOrPassError" : "Email ka ama Password ka Waa Uu Khaldanyahay!",
+    "registerSuccess": "Waa lagu diiwaan galiyay Fadlan hubi iimaylkaga si aad u xaqiijiso akoonkaaga",
+    "registerError": "Wax baa ka khaldamay diiwaangelinta fadlan isku day mar kale"
 }

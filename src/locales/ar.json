@@ -6,9 +6,11 @@
     "singleUser"     : "Successfuly Fetched One User",
     "notExist"       : "معرف المستخدم غير موجود",
     "IdExist"        : "معرف المستخدم موجود بالفعل",
-    "userCreated"    : "تم إنشاء المستخدم بنجاح",
+    "emailExists"    : "البريد الإلكتروني للمستخدم موجود بالفعل",
     "userUpdated"    : "تم تحديث المستخدم بنجاح",
     "userDeleted"    : "تم حذف المستخدم بنجاح",
     "internalErrorMsg" : "هناك خطأ ما!",
-    "incorrectEmailOrPassError" : "البريد الالكتروني او كلمة المرور غير صحيحة"
+    "incorrectEmailOrPassError" : "البريد الالكتروني او كلمة المرور غير صحيحة",
+    "registerSuccess": "انت تملك حساب مصرفي. يرجى التحقق من بريدك الإلكتروني للتحقق من الحساب",
+    "registerError": "حدث خطأ ما في التسجيل يرجى المحاولة مرة أخرى"
 }

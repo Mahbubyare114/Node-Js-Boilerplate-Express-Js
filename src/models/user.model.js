@@ -1,5 +1,5 @@
 const { ApiError } = require("../payload/ApiError");
-const db = require('../config/database'); // get db conn
+const db = require('../config/database');
 const logger = require("../config/logger");
 
 // ========== User API DB Calls Starts From Here  ========== //
@@ -7,25 +7,23 @@ const logger = require("../config/logger");
  * Get All Users From Oracle Db
  */
 const getAllUsers = async () => {
-    // let query = `SELECT * FROM usersTbl`; non qouted cols
-    let query = `SELECT * FROM USERS`; // qouted cols
-    let result = await db.executeQuery(query);
 
     logger.info('All Users Are Being Fetched');
-    return result;
-
+    return await db.executeQuery(`SELECT * FROM USERS`,[]);
 }
 
 /**
  * Get Single User From Oracle Db
  */
-const getUserById = async(id) => {
+const getUserByEmail = async(email) => {
 
-    let query = `SELECT * FROM usersTbl WHERE id= id`;
-    let result = await db.executeQuery(query);
+    //let email = email.email;
 
-    console.log(result);
-    logger.info('A User By Id Is Being Fetched');
+    let result = await db.executeQuery(`SELECT * FROM USERS WHERE EMAIL= :email`, [email]);
+    
+    
+
+    logger.info('A User By Email Is Being Fetched');
     return result;
 }
 
@@ -33,36 +31,56 @@ const getUserById = async(id) => {
  * Create New User In Oracle Db
  */
  const create = async(user) => {
-   
-    let query = `INSERT INTO usersTbl(id,first_name,last_name,email,password,role)
-    VALUES('${user.id}','${user.first_name}','${user.last_name}','${user.email}','${user.password}','${user.role}')`;
-   
-    let result = await db.executeQuery(query);
 
-    logger.info('A New User Is Being Created!');
-     return result;
-  
+    let email = user.email;
+    let password = user.password;
+    let fullName = user.fullName;
+    let active = 0;
+
+    let result = await db.executeQuery(`INSERT INTO USERS (USERID, EMAIL, PASSWORD, FULLNAME, ACTIVE)
+    VALUES (USER_SEQ.nextval, :email, :password, :fullName,:active)`
+    , [email, password, fullName, active]);
+
+    if (result.rowsAffected === 1){
+
+        logger.info('A New User Is Being Inserted!');
+    return true;
+    }
+   
+return false;
+   
+    
 }
 /**
  * Update Single User In Oracle Db
  */
  const update = async(user) => {
-    let query = `UPDATE usersTbl SET first_name='${user.first_name}', last_name= '${user.last_name}',
-    email= '${user.email}', password= '${user.password}', role= '${user.role}`;
+    let email = user.email;
+    let password = user.password;
+    let fullName = user.fullName;
+    let active = 0;
+
+
+    let result = await db.executeQuery(`UPDATE USERS SET PASSWORD=:password,
+    FULLNAME= :fullName, ACTIVE= :active WHERE EMAIL= :email`, [password, fullName, active, email])
    
-    let result = await db.executeQuery(query);
+    if (result.rowsAffected === 1){
 
     logger.info('User Is Updated Successfully!');
-     return result;
+     return true;
+
+    }
+    return false;
 
 }
 
 /**
- * Delete Single User In Oracle Db
+ * Delete Single User By Email In Oracle Db
  */
-const userDelete = async(id)=>{
-    let query = `DELETE usersTbl WHERE id = ${id}`;
-    let result = await db.executeQuery(query);
+const userDelete = async(email)=>{
+    let useremail = email.email;
+    let result = await db.executeQuery(`DELETE USERS WHERE email=:email`,[useremail]);
+  
 
     logger.info('A User Is Being Deleted!');
     return result;
@@ -70,38 +88,53 @@ const userDelete = async(id)=>{
 }
 // ========== User API DB Calls Ends To Here  ========== //
 
+
 // ========== Bussiness Logic Implementation Starts From Here  ========== //
 /**
  * Check User With Email and Password For Login Authentication
  */
 const getUserByEmailAndPassword = async(email, password) => {
-   let query = (`SELECT email, password FROM usersTbl WHERE email= '${email}' and password= ${password}`);
-   let result = await db.executeQuery(query);
-   
-    logger.info('Authenticated User For Logged In');
-    return result;
-}
+    // let result = await db.executeQuery(`SELECT U.USERID, U.FULLNAME, U.EMAIL, R.ROLENAME
+    // FROM USERS U
+    //          INNER JOIN USERROLE UR on U.USERID = UR."userId"
+    //          INNER JOIN ROLES R on UR."roleId" = R.ROLEID
+    // WHERE EMAIL = :email
+    //   AND PASSWORD = :password
+    //   AND ACTIVE = 1`, [email, password])
 
-/**
- * Check if Id is Exist
- */
-const isIdExist = async(id) => {
-    let query = (`SELECT * FROM usersTbl WHERE id= '${id}'`);
-    let result = await db.executeQuery(query);
+      logger.info('Authenticated User Logged In');
+
+    let result = await db.executeQuery(`SELECT EMAIL
+    FROM USERS            
+    WHERE EMAIL = :email
+      AND PASSWORD = :password
+      AND ACTIVE = 1`, [email, password])
+
+      if (!result)
+      return null;
+      
+      
+     return result[0];    
    
-    logger.info('A User With Id Check Is Fetched');
-    return result;
 }
 
 /**
  * Check if Email is Exist
  */
 const isEmailExist = async(email) => {
-    let query = (`SELECT * FROM usersTbl WHERE email= '${email}'`);
-    let result = await db.executeQuery(query);
+    let result = await db.executeQuery(`SELECT COUNT(*) AS emailAlreadyExist from USERS WHERE EMAIL = :email`
+    , [email]);
+
+    console.log(result);
+    if(result[0].emailalreadyexist > 0)
+
+        return true;
+        logger.info('This User With email Is Already Exist');
+    
+    return false;
+
    
-    logger.info('A User With email Check Is Fetched');
-    return result;  
+    // return result;  
  }
  // ========== Bussiness Logic Implementation Ends To Here  ========== //
 
@@ -109,10 +142,9 @@ const isEmailExist = async(email) => {
 module.exports = {
     create,
     getAllUsers,
-    getUserById,
+    getUserByEmail,
     getUserByEmailAndPassword,
     update,
-    isIdExist,
     isEmailExist,
     userDelete
 }

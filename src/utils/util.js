@@ -1,4 +1,6 @@
-
+/**
+ * This function is For Handling All Async Functions
+ */
 const handleAsync = (fn) => (req, res, next) => {
     Promise
     .resolve(fn(req, res, next))
@@ -7,21 +9,24 @@ const handleAsync = (fn) => (req, res, next) => {
   
   
   const parseDatabaseObject = (data) => {
-    let coloums = data.metaData;
-    let rows = data.rows;
-    let array = [];
-  
-    rows.forEach((row, i) => {
-    var obj = {};
-      coloums.map((r, c) => {
-        obj[r.name] = row[c];
+    if(!data.metaData || !data.rows){
+      return data;
+  }
+
+  let columns = data.metaData;
+  let rows = data.rows;
+  let array = [];
+
+  rows.forEach((row, i) => {
+      var obj = {};
+      columns.map((c, r) => {
+          obj[c.name.toLowerCase()] = row[r];
       });
       array.push(obj);
-    });
-   // console.log(array);
-  
-    return array;
-  };
+  });
+  return array;
+};
+
   
   // parseDatabaseObject();
   

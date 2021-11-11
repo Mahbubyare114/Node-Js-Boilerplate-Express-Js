@@ -16,8 +16,8 @@ const password = process.env.DB_PASSWORD;
 // const username= 'hr';
 // const password= 'hr';
 
-
-async function executeQuery(query){
+oracledb.initOracleClient({libDir: 'D:\\desktop\\TaajTraining\\second training\\Node Db Client\\instantclient_21_3'});
+async function executeQuery(query, params){
     
   /**
   * get connction
@@ -25,7 +25,7 @@ async function executeQuery(query){
  
     let connection;
     try{
-        oracledb.initOracleClient({libDir: 'D:\\desktop\\TaajTraining\\second training\\Node Db Client\\instantclient_21_3'})
+       
        connection = await oracledb.getConnection({
             user: username,
             password: password,
@@ -37,10 +37,12 @@ async function executeQuery(query){
   /**
   * execute Query and return result
   */
-      let result = await connection.execute(query);
+      let result = await connection.execute(query, params);
+      connection.commit();
 
-      //return result;
+      
       return util.parseDatabaseObject(result);
+       // return result; 
        // console.log(result);
     }
     
@@ -50,8 +52,10 @@ async function executeQuery(query){
 
     catch(err){
        logger.error(err);
-        throw new ApiError (status.INTERNAL_SERVER_ERROR,"Table or View Does Not Exist!")
+       console.log(`Error from database: ${err}`)
       
+      // throw new ApiError (status.INTERNAL_SERVER_ERROR,"Error from database:!")
+       return null;
     }finally{
  /**
   * close the connection if it's open

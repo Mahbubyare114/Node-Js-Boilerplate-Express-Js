@@ -7,9 +7,11 @@
     "singleUser"     : "Successfuly Fetched One User",
     "notExist"       : "User Id Doesn't Exist",
     "IdExist"        : "User is already Exist",
+    "emailExists"    : "User email is already Exist",
     "userUpdated"    : "User Updated Successfully",
-    "userCreated"    : "User is Created Successfully",
     "userDeleted"    : "User is Deleted Successfully",
     "internalErrorMsg" : "Something We nt Wrong!",
-    "incorrectEmailOrPassError" : "Email or Password Is Incorrect"
+    "incorrectEmailOrPassError" : "Email or Password Is Incorrect",
+    "registerSuccess": "You have been registered. Please check your email to verify account",
+    "registerError"  : "Something went wrong with the registration please try again"
 }

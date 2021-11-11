@@ -9,7 +9,8 @@ const auth = (req, res, next) => {
    // let reqHeader = req.headers['x-access-token'];
   //  let token = reqHeader.split(' ')[1];
 
-    let token = req.headers.authorization;
+    let token = req.headers.accesstoken;
+    console.log(`Access Token : ${token}`);
   
     if(!token){
         logger.warn('Someone Is Trying To Get Access Without Token!!');
@@ -18,8 +19,9 @@ const auth = (req, res, next) => {
 
     let response = jwt.verify(token, process.env.JWT_SECRET_KEY);
     if(response && response.user){
-        logger.info('Authenticated User Logged In');
-        next();
+
+        console.log('Authenticated User With Token Logged In');
+        return next();
     }
      throw new ApiError(401, 'Your Authentication is Expired for Now!, Plz Login Again');
     

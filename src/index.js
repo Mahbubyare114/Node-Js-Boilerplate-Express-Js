@@ -23,7 +23,7 @@ const port = process.env.PORT;
   locales: ['en','ar','so'],
 
     // set default locale
-    defaultLocale: 'so',
+    defaultLocale: 'en',
  
   // sets a custom cookie name to parse locale settings from
   cookie: 'currentLocale',

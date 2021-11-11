@@ -81,3 +81,38 @@
 2021-11-07T21:46:05.592Z [BoilerPlate] [31merror[39m: ORA-00904: "UNDEFINED": invalid identifier
 2021-11-07T21:47:07.168Z [BoilerPlate] [31merror[39m: ORA-00904: "ID": invalid identifier
 2021-11-07T21:47:36.698Z [BoilerPlate] [31merror[39m: ORA-00904: "ID": invalid identifier
+2021-11-08T05:58:38.562Z [BoilerPlate] [31merror[39m: ORA-00942: table or view does not exist
+2021-11-08T06:38:04.180Z [BoilerPlate] [31merror[39m: ORA-00001: unique constraint (ABDIKADIR.SYS_C0011137) violated
+2021-11-08T06:39:57.793Z [BoilerPlate] [31merror[39m: Cannot read property 'forEach' of undefined
+2021-11-08T11:10:12.161Z [BoilerPlate] [31merror[39m: ORA-00904: "MAHBUB123": invalid identifier
+2021-11-08T11:16:17.435Z [BoilerPlate] [31merror[39m: ORA-00904: "MAHBUB123": invalid identifier
+2021-11-08T12:04:15.992Z [BoilerPlate] [31merror[39m: NJS-005: invalid value for parameter 2
+2021-11-09T11:45:28.348Z [BoilerPlate] [31merror[39m: NJS-005: invalid value for parameter 2
+2021-11-09T11:50:37.864Z [BoilerPlate] [31merror[39m: NJS-005: invalid value for parameter 2
+2021-11-09T11:54:45.591Z [BoilerPlate] [31merror[39m: NJS-005: invalid value for parameter 2
+2021-11-09T11:58:16.604Z [BoilerPlate] [31merror[39m: params is not defined
+2021-11-09T12:00:45.216Z [BoilerPlate] [31merror[39m: ORA-00904: "MAHBUB123": invalid identifier
+2021-11-09T21:59:51.201Z [BoilerPlate] [31merror[39m: ORA-00001: unique constraint (ABDIKADIR.USERS_PK) violated
+2021-11-09T22:01:41.833Z [BoilerPlate] [31merror[39m: ORA-00001: unique constraint (ABDIKADIR.USERS_PK) violated
+2021-11-09T22:04:07.736Z [BoilerPlate] [31merror[39m: Cannot read property 'forEach' of undefined
+2021-11-09T22:31:01.270Z [BoilerPlate] [31merror[39m: NJS-005: invalid value for parameter 2
+2021-11-09T22:31:01.505Z [BoilerPlate] [31merror[39m: NJS-005: invalid value for parameter 2
+2021-11-09T22:44:57.523Z [BoilerPlate] [31merror[39m: NJS-005: invalid value for parameter 2
+2021-11-09T22:49:32.669Z [BoilerPlate] [31merror[39m: NJS-005: invalid value for parameter 2
+2021-11-10T07:55:16.312Z [BoilerPlate] [33mwarn[39m: Someone Is Trying To Get Access Without Token!!
+2021-11-10T08:01:54.966Z [BoilerPlate] [33mwarn[39m: Someone Is Trying To Get Access Without Token!!
+2021-11-10T08:02:15.386Z [BoilerPlate] [33mwarn[39m: Someone Is Trying To Get Access Without Token!!
+2021-11-10T08:02:45.499Z [BoilerPlate] [33mwarn[39m: Someone Is Trying To Get Access Without Token!!
+2021-11-10T08:03:18.691Z [BoilerPlate] [33mwarn[39m: Someone Is Trying To Get Access Without Token!!
+2021-11-10T08:03:59.027Z [BoilerPlate] [33mwarn[39m: Someone Is Trying To Get Access Without Token!!
+2021-11-10T08:04:31.627Z [BoilerPlate] [33mwarn[39m: Someone Is Trying To Get Access Without Token!!
+2021-11-10T08:06:27.864Z [BoilerPlate] [33mwarn[39m: Someone Is Trying To Get Access Without Token!!
+2021-11-10T08:07:48.011Z [BoilerPlate] [33mwarn[39m: Someone Is Trying To Get Access Without Token!!
+2021-11-11T05:58:33.267Z [BoilerPlate] [31merror[39m: ORA-00904: "UR"."userId": invalid identifier
+2021-11-11T05:59:58.202Z [BoilerPlate] [31merror[39m: ORA-12170: TNS:Connect timeout occurred
+2021-11-11T06:37:11.307Z [BoilerPlate] [31merror[39m: ORA-12560: TNS:protocol adapter error
+2021-11-11T06:48:22.235Z [BoilerPlate] [33mwarn[39m: Someone Is Trying To Get Access Without Token!!
+2021-11-11T06:48:36.958Z [BoilerPlate] [33mwarn[39m: Someone Is Trying To Get Access Without Token!!
+2021-11-11T06:51:38.532Z [BoilerPlate] [33mwarn[39m: Someone Is Trying To Get Access Without Token!!
+2021-11-11T08:48:58.313Z [BoilerPlate] [31merror[39m: ORA-12560: TNS:protocol adapter error
+2021-11-11T09:05:36.796Z [BoilerPlate] [33mwarn[39m: Someone Is Trying To Get Access Without Token!!

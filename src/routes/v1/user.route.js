@@ -6,13 +6,12 @@ const {validate} = require('../../middlewares');
 const {authValidatorMiddleware} = require('../../middlewares');
 
 
-router.get('/test', userController.testCall); 
-router.post('/create',validate(userValidator.createUser), userController.create); // user obj validation
-router.patch('/update',validate(userValidator.updateUser) ,userController.update); // update by Id
-router.get('/getAllUsers',userController.getAllUsers); 
-//router.get('/getAllUsers', authValidatorMiddleware.auth ,userController.getAllUsers); 
-router.get('/:getUserById',userController.getUserById); // UserId validation
-router.delete('/DeleteById',userController.delet); // delete by id
+router.get('/test', authValidatorMiddleware.auth, userController.testCall); // end point for testing i18n
+router.post('/create', authValidatorMiddleware.auth, validate(userValidator.createUser), userController.create); // create user end point
+router.patch('/update', authValidatorMiddleware.auth,validate(userValidator.updateUser) ,userController.update); // update by email end point
+router.get('/getAllUsers', authValidatorMiddleware.auth ,userController.getAllUsers); // get all users end point
+router.get('/getUserByEmail', authValidatorMiddleware.auth ,userController.getUserByEmail); // get user by email end point
+router.delete('/DeleteByEmail', authValidatorMiddleware.auth ,userController.delet); // delete user by email end point
 
 
 module.exports = router;
