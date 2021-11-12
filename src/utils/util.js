@@ -7,7 +7,9 @@ const handleAsync = (fn) => (req, res, next) => {
     .catch((err) => next(err));
   };
   
-  
+  /**
+ * This function is For Handling All Data Return
+ */
   const parseDatabaseObject = (data) => {
     if(!data.metaData || !data.rows){
       return data;
@@ -25,9 +27,8 @@ const handleAsync = (fn) => (req, res, next) => {
       array.push(obj);
   });
   return array;
-};
 
-  
+};
   // parseDatabaseObject();
   
   module.exports = {

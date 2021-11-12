@@ -14,7 +14,7 @@ const login = handleAsync(async(req, res) => {
     let password = req.body.password;
 
 /**
- * 
+ * return Api Response
  */    
     let loginResponse = await authServices.login(email, password);
 

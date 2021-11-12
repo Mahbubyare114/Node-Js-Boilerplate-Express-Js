@@ -1,14 +1,59 @@
-const { response } = require('express');
-const status = require('http-status');
-const { required } = require('joi');
-const { loggers } = require('winston');
-const logger = require('../config/logger');
-const { ApiError } = require('../payload/ApiError');
-const { ApiResponse } = require('../payload/ApiResponse');
-const { userServices } = require('../services');
-const {handleAsync} = require('../utils/util');
+const status = require('http-status'); // import http status
+const logger = require('../config/logger'); // import winston logger
+const { ApiError } = require('../payload/ApiError'); // import Api Error
+const { ApiResponse } = require('../payload/ApiResponse'); // import Api Response
+const { userServices } = require('../services'); // import User Services
+const {handleAsync} = require('../utils/util'); // import handleAsync from util
 
 // ========== User API Service Calls Starts From Here  ========== //
+
+// ********** Get All Users Starts From Here ********** //
+/**
+ * Get All Users Controller
+ */
+ const getAllUsers = handleAsync( async (req, res) => {  
+
+    let message = res.__('allUsers'); // i18n support for res
+
+   let users = await userServices.getAllUsers();
+   res
+   .status(status.OK)
+   .send(new ApiResponse(status.OK, message , users));
+
+});
+// ********** Get All Users Ends To Here ********** //
+
+// ********** Get User by it's email Starts From Here ********** //
+/**
+ * get user by it's email controller
+ */
+  const getUserByEmail = handleAsync(async (req, res) => {
+   
+/**
+ * get the user email
+ */
+    let user = req.body;
+/**
+ * Check If User Email Is Already Exist
+ */
+  let emailExist = await userServices.isEmailExist(user.email); 
+  console.log(`is email exist: ${emailExist}`)
+
+    if(emailExist){
+
+        let message = res.__('singleUser'); // i18n support for res
+        let getUserByEmail = await userServices.getUserByEmail(user.email);
+
+         res.status(status.OK)
+        .send(new ApiResponse (status.OK , message, getUserByEmail));  
+
+        
+    }
+    let notExistMessage = res.__('notExist');  // read msg from locales notExist
+    throw new ApiError(status.NOT_ACCEPTABLE, notExistMessage)
+                                       
+});
+// ********** Get User by it's id Ends To Here ********** //
 
 // ********** Create User Starts From Here ********** //
 /**
@@ -93,7 +138,6 @@ const update = handleAsync( async(req, res) => {
         return res.status(status.OK)
         .send(new ApiResponse(status.OK, message));
     }
-
  /**
  *  Display Internal Error if Error Occurs in the DB
  */  
@@ -137,54 +181,6 @@ if(deletedUser){
     } 
 });
 // ********** Delete User Ends To Here ********** //
-
-// ********** Get All Users Starts From Here ********** //
-/**
- * Get All Users Controller
- */
-const getAllUsers = handleAsync( async (req, res) => {  
-
-    let message = res.__('allUsers'); // i18n support for res
-
-   let users = await userServices.getAllUsers();
-   res
-   .status(status.OK)
-   .send(new ApiResponse(status.OK, message , users));
-
-});
-// ********** Get All Users Ends To Here ********** //
-
-// ********** Get User by it's email Starts From Here ********** //
-/**
- * get user by it's email controller
- */
-  const getUserByEmail = handleAsync(async (req, res) => {
-   
-/**
- * get the user email
- */
-    let user = req.body;
-/**
- * Check If User Email Is Already Exist
- */
-  let emailExist = await userServices.isEmailExist(user.email); 
-  console.log(`is email exist: ${emailExist}`)
-
-    if(emailExist){
-
-        let message = res.__('singleUser'); // i18n support for res
-        let getUserByEmail = await userServices.getUserByEmail(user.email);
-
-         res.status(status.OK)
-        .send(new ApiResponse (status.OK , message, getUserByEmail));  
-
-        
-    }
-    let notExistMessage = res.__('notExist');  // read msg from locales notExist
-    throw new ApiError(status.NOT_ACCEPTABLE, notExistMessage)
-                                       
-});
-// ********** Get User by it's id Ends To Here ********** //
 
  // ========== User API Service Calls Ends Here  ========== //
 

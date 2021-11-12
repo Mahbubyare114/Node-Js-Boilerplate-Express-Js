@@ -66,7 +66,7 @@ return false;
    
     if (result.rowsAffected === 1){
 
-    logger.info('User Is Updated Successfully!');
+    logger.info('Is User Is Updated Successfully!');
      return true;
 
     }
@@ -78,8 +78,8 @@ return false;
  * Delete Single User By Email In Oracle Db
  */
 const userDelete = async(email)=>{
-    let useremail = email.email;
-    let result = await db.executeQuery(`DELETE USERS WHERE email=:email`,[useremail]);
+    // let useremail = email.email;
+    let result = await db.executeQuery(`DELETE USERS WHERE email=:email`,[email]);
   
 
     logger.info('A User Is Being Deleted!');
@@ -94,26 +94,20 @@ const userDelete = async(email)=>{
  * Check User With Email and Password For Login Authentication
  */
 const getUserByEmailAndPassword = async(email, password) => {
-    // let result = await db.executeQuery(`SELECT U.USERID, U.FULLNAME, U.EMAIL, R.ROLENAME
-    // FROM USERS U
-    //          INNER JOIN USERROLE UR on U.USERID = UR."userId"
-    //          INNER JOIN ROLES R on UR."roleId" = R.ROLEID
-    // WHERE EMAIL = :email
-    //   AND PASSWORD = :password
-    //   AND ACTIVE = 1`, [email, password])
-
-      logger.info('Authenticated User Logged In');
-
-    let result = await db.executeQuery(`SELECT EMAIL
-    FROM USERS            
+    let result = await db.executeQuery(`SELECT U.USERID, U.FULLNAME, U.EMAIL, R.ROLENAME
+    FROM USERS U
+             INNER JOIN USERROLE UR on U.USERID = UR.userId
+             INNER JOIN ROLES R on UR.roleId = R.ROLEID
     WHERE EMAIL = :email
       AND PASSWORD = :password
       AND ACTIVE = 1`, [email, password])
 
+      
+
       if (!result)
       return null;
       
-      
+      logger.info('Authenticated User Logged In The Database');
      return result[0];    
    
 }
@@ -129,7 +123,7 @@ const isEmailExist = async(email) => {
     if(result[0].emailalreadyexist > 0)
 
         return true;
-        logger.info('This User With email Is Already Exist');
+        
     
     return false;
 

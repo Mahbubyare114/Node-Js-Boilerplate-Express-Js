@@ -6,10 +6,10 @@ const jwt = require('jsonwebtoken');
 
 
 const login = async(email, password) =>{
-    logger.info(`Authentication on email ${email}`);
+    logger.info(`Authentication Started on email: ${email}`);
 
     let user = await userModel.getUserByEmailAndPassword(email, password);
-   console.log(`Executing getUserByEmailAndPassword from auth service ${email}`);
+   console.log(`Executing getUserByEmailAndPassword call to model from auth service ${email}`);
 
     if (!user || user.length <= 0) {
 
@@ -22,7 +22,9 @@ const login = async(email, password) =>{
    *  Generate jwt (json web token) to the Authenticated User
    *  Which Consist: 1-object  2-private key  3-time or expiration
    */
-    let token = jwt.sign({user}, process.env.JWT_SECRET_KEY , { expiresIn: '5m' });
+     let token = jwt.sign({user}, process.env.JWT_SECRET_KEY , { expiresIn: '20m' }); //whole obj
+     //let token = jwt.sign({USERID: user[0].USERID, ROLENAME: user[0].ROLENAME}, process.env.JWT_SECRET_KEY , { expiresIn: '30m' });
+    
 
     return {accessToken: token};
 }

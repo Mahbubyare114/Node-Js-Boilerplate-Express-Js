@@ -12,8 +12,3 @@ class ApiError extends Error {
 module.exports = {
     ApiError
 }
-
-
-
-// magic happens here
-// if i change this.message to this.msg whole api error take msg 

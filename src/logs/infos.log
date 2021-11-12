@@ -804,3 +804,278 @@
 2021-11-11T13:59:14.324Z [BoilerPlate] [32minfo[39m: A User By Email Is Being Fetched
 2021-11-11T13:59:34.783Z [BoilerPlate] [32minfo[39m: All Users Are Being Fetched
 2021-11-11T13:59:36.856Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-11T15:35:19.872Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-11T15:35:27.452Z [BoilerPlate] [32minfo[39m: Authentication on email mahbub@gmail.com
+2021-11-11T15:35:27.454Z [BoilerPlate] [32minfo[39m: Authenticated User Logged In
+2021-11-11T15:35:30.026Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-11T15:35:41.008Z [BoilerPlate] [32minfo[39m: Authentication on email mahbub@gmail.com
+2021-11-11T15:35:41.009Z [BoilerPlate] [32minfo[39m: Authenticated User Logged In
+2021-11-11T15:35:43.118Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T08:23:30.275Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-12T08:23:51.073Z [BoilerPlate] [32minfo[39m: Authentication on email mahbub@gmail.com
+2021-11-12T08:23:53.619Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T08:23:54.253Z [BoilerPlate] [31merror[39m: ORA-00904: "UR"."userId": invalid identifier
+2021-11-12T08:23:54.783Z [BoilerPlate] [32minfo[39m: Authenticated User Logged In
+2021-11-12T08:24:47.044Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-12T08:25:17.947Z [BoilerPlate] [32minfo[39m: Authentication on email mahbub@gmail.com
+2021-11-12T08:25:20.041Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T08:25:20.517Z [BoilerPlate] [31merror[39m: ORA-00904: "UR"."userId": invalid identifier
+2021-11-12T08:25:20.980Z [BoilerPlate] [32minfo[39m: Authenticated User Logged In
+2021-11-12T08:26:20.055Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-12T08:26:23.699Z [BoilerPlate] [32minfo[39m: Authentication on email mahbub@gmail.com
+2021-11-12T08:26:26.151Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T08:26:26.757Z [BoilerPlate] [31merror[39m: ORA-00904: "UR"."userId": invalid identifier
+2021-11-12T08:26:27.204Z [BoilerPlate] [32minfo[39m: Authenticated User Logged In
+2021-11-12T08:27:14.021Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-12T08:27:18.137Z [BoilerPlate] [32minfo[39m: Authentication on email mahbub@gmail.com
+2021-11-12T08:27:20.339Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T08:27:21.636Z [BoilerPlate] [32minfo[39m: Authenticated User Logged In
+2021-11-12T08:28:51.243Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-12T08:29:08.172Z [BoilerPlate] [32minfo[39m: Authentication on email mahbub@gmail.com
+2021-11-12T08:29:10.301Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T08:29:11.712Z [BoilerPlate] [32minfo[39m: Authenticated User Logged In
+2021-11-12T08:30:37.769Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-12T08:30:44.707Z [BoilerPlate] [32minfo[39m: Authentication on email mahbub@gmail.com
+2021-11-12T08:30:46.873Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T08:30:48.129Z [BoilerPlate] [32minfo[39m: Authenticated User Logged In
+2021-11-12T08:32:02.214Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-12T08:32:04.942Z [BoilerPlate] [32minfo[39m: Authentication on email mahbub@gmail.com
+2021-11-12T08:32:07.110Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T08:32:08.368Z [BoilerPlate] [32minfo[39m: Authenticated User Logged In
+2021-11-12T08:34:44.208Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-12T08:34:48.387Z [BoilerPlate] [32minfo[39m: Authentication on email mahbub@gmail.com
+2021-11-12T08:34:50.536Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T08:34:51.680Z [BoilerPlate] [32minfo[39m: Authenticated User Logged In
+2021-11-12T08:34:59.337Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T08:34:59.343Z [BoilerPlate] [31merror[39m: NJS-005: invalid value for parameter 2
+2021-11-12T08:37:02.094Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-12T08:37:10.009Z [BoilerPlate] [32minfo[39m: Authentication on email mahbub@gmail.com
+2021-11-12T08:37:12.071Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T08:37:13.363Z [BoilerPlate] [32minfo[39m: Authenticated User Logged In
+2021-11-12T09:54:27.894Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-12T09:54:36.981Z [BoilerPlate] [32minfo[39m: Authentication on email mahbub@gmail.com
+2021-11-12T09:54:37.302Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T09:54:37.326Z [BoilerPlate] [32minfo[39m: Authenticated User Logged In
+2021-11-12T10:04:22.203Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-12T10:04:30.932Z [BoilerPlate] [32minfo[39m: Authentication on email mahbub@gmail.com
+2021-11-12T10:04:31.139Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T10:04:31.151Z [BoilerPlate] [32minfo[39m: Authenticated User Logged In
+2021-11-12T10:12:14.208Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-12T10:12:20.546Z [BoilerPlate] [32minfo[39m: Authentication on email mahbub@gmail.com
+2021-11-12T10:12:20.704Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T10:12:20.712Z [BoilerPlate] [32minfo[39m: Authenticated User Logged In
+2021-11-12T10:20:16.676Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-12T10:22:17.430Z [BoilerPlate] [32minfo[39m: Authentication on email mahbub@gmail.com
+2021-11-12T10:22:17.619Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T10:22:17.628Z [BoilerPlate] [32minfo[39m: Authenticated User Logged In
+2021-11-12T10:23:01.286Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T10:29:43.072Z [BoilerPlate] [32minfo[39m: Authentication on email mahbub@gmail.com
+2021-11-12T10:29:43.140Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T10:29:43.144Z [BoilerPlate] [32minfo[39m: Authenticated User Logged In
+2021-11-12T10:32:33.752Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-12T10:32:36.720Z [BoilerPlate] [32minfo[39m: Authentication on email mahbub@gmail.com
+2021-11-12T10:32:36.936Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T10:32:36.946Z [BoilerPlate] [32minfo[39m: Authenticated User Logged In
+2021-11-12T10:36:06.121Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-12T10:36:12.697Z [BoilerPlate] [32minfo[39m: Authentication on email mahbub@gmail.com
+2021-11-12T10:36:12.889Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T10:36:12.901Z [BoilerPlate] [32minfo[39m: Authenticated User Logged In
+2021-11-12T10:38:29.839Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-12T10:38:39.005Z [BoilerPlate] [32minfo[39m: Authentication on email mahbub@gmail.com
+2021-11-12T10:38:39.179Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T10:38:39.188Z [BoilerPlate] [32minfo[39m: Authenticated User Logged In
+2021-11-12T10:41:04.717Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-12T10:41:07.417Z [BoilerPlate] [32minfo[39m: Authentication on email mahbub@gmail.com
+2021-11-12T10:41:07.577Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T10:41:07.587Z [BoilerPlate] [32minfo[39m: Authenticated User Logged In
+2021-11-12T10:43:56.270Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-12T10:43:59.522Z [BoilerPlate] [32minfo[39m: Authentication on email mahbub@gmail.com
+2021-11-12T10:43:59.699Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T10:43:59.712Z [BoilerPlate] [32minfo[39m: Authenticated User Logged In
+2021-11-12T10:46:00.635Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-12T10:46:05.030Z [BoilerPlate] [32minfo[39m: Authentication on email mahbub@gmail.com
+2021-11-12T10:46:05.221Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T10:46:05.252Z [BoilerPlate] [32minfo[39m: Authenticated User Logged In
+2021-11-12T10:48:22.583Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-12T10:48:27.473Z [BoilerPlate] [32minfo[39m: Authentication on email mahbub@gmail.com
+2021-11-12T10:48:27.666Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T10:48:27.678Z [BoilerPlate] [32minfo[39m: Authenticated User Logged In The Database
+2021-11-12T11:10:36.645Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-12T11:10:43.159Z [BoilerPlate] [32minfo[39m: Authentication on email mahbub@gmail.com
+2021-11-12T11:10:43.358Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T11:10:43.370Z [BoilerPlate] [32minfo[39m: Authenticated User Logged In The Database
+2021-11-12T13:22:36.023Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-12T13:22:42.084Z [BoilerPlate] [32minfo[39m: Authentication on email mahbub@gmail.com
+2021-11-12T13:22:42.366Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T13:22:42.378Z [BoilerPlate] [32minfo[39m: Authenticated User Logged In The Database
+2021-11-12T13:27:41.784Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-12T13:27:48.077Z [BoilerPlate] [32minfo[39m: Authentication on email mahbub@gmail.com
+2021-11-12T13:27:48.245Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T13:27:48.255Z [BoilerPlate] [32minfo[39m: Authenticated User Logged In The Database
+2021-11-12T13:27:54.353Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T13:29:50.459Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-12T13:29:56.056Z [BoilerPlate] [32minfo[39m: Authentication on email mahbub@gmail.com
+2021-11-12T13:29:56.198Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T13:29:56.206Z [BoilerPlate] [32minfo[39m: Authenticated User Logged In The Database
+2021-11-12T13:46:21.032Z [BoilerPlate] [33mwarn[39m: Someone Is Trying To Get Access Without Token!!
+2021-11-12T13:46:31.611Z [BoilerPlate] [32minfo[39m: Authentication on email mahbub@gmail.com
+2021-11-12T13:46:31.685Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T13:46:31.689Z [BoilerPlate] [32minfo[39m: Authenticated User Logged In The Database
+2021-11-12T13:47:27.274Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-12T13:47:41.442Z [BoilerPlate] [32minfo[39m: Authentication on email mahbub@gmail.com
+2021-11-12T13:47:41.593Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T13:47:41.602Z [BoilerPlate] [32minfo[39m: Authenticated User Logged In The Database
+2021-11-12T13:48:00.950Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T14:13:13.938Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-12T14:13:21.107Z [BoilerPlate] [32minfo[39m: Authentication on email mahbub@gmail.com
+2021-11-12T14:13:21.261Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T14:13:21.269Z [BoilerPlate] [32minfo[39m: Authenticated User Logged In The Database
+2021-11-12T14:17:31.077Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T14:18:56.209Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-12T14:19:03.036Z [BoilerPlate] [32minfo[39m: Authentication on email mahbub@gmail.com
+2021-11-12T14:19:03.199Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T14:19:03.207Z [BoilerPlate] [32minfo[39m: Authenticated User Logged In The Database
+2021-11-12T14:24:12.145Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-12T14:24:18.080Z [BoilerPlate] [32minfo[39m: Authentication on email Started: mahbub@gmail.com
+2021-11-12T14:24:18.238Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T14:24:18.246Z [BoilerPlate] [32minfo[39m: Authenticated User Logged In The Database
+2021-11-12T14:24:31.635Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T14:25:13.213Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-12T14:25:19.422Z [BoilerPlate] [32minfo[39m: Authentication on email Started: mahbub@gmail.com
+2021-11-12T14:25:19.603Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T14:25:19.610Z [BoilerPlate] [32minfo[39m: Authenticated User Logged In The Database
+2021-11-12T14:26:03.095Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T14:29:21.959Z [BoilerPlate] [33mwarn[39m: Someone Is Trying To Get Access Without Token!!
+2021-11-12T14:31:19.321Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-12T14:31:27.040Z [BoilerPlate] [32minfo[39m: Authentication on email Started: mahbub@gmail.com
+2021-11-12T14:31:27.182Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T14:31:27.191Z [BoilerPlate] [32minfo[39m: Authenticated User Logged In The Database
+2021-11-12T14:31:37.022Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T14:33:53.379Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T14:34:05.157Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T14:34:24.644Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T14:34:38.338Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T14:34:56.856Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T14:55:12.073Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-12T14:55:20.637Z [BoilerPlate] [32minfo[39m: Authentication on email Started: mahbub@gmail.com
+2021-11-12T14:55:20.784Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T14:55:20.791Z [BoilerPlate] [32minfo[39m: Authenticated User Logged In The Database
+2021-11-12T14:55:29.099Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T14:55:55.275Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-12T14:56:01.018Z [BoilerPlate] [32minfo[39m: Authentication on email Started: mahbub@gmail.com
+2021-11-12T14:56:01.179Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T14:56:01.185Z [BoilerPlate] [32minfo[39m: Authenticated User Logged In The Database
+2021-11-12T14:56:08.697Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T14:59:39.978Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-12T14:59:43.712Z [BoilerPlate] [32minfo[39m: Authentication on email Started: mahbub@gmail.com
+2021-11-12T14:59:43.851Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T14:59:43.858Z [BoilerPlate] [32minfo[39m: Authenticated User Logged In The Database
+2021-11-12T14:59:47.850Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T15:18:42.053Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-12T15:18:47.125Z [BoilerPlate] [32minfo[39m: Authentication on email Started: mahbub@gmail.com
+2021-11-12T15:18:47.293Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T15:18:47.302Z [BoilerPlate] [32minfo[39m: Authenticated User Logged In The Database
+2021-11-12T15:19:17.386Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-12T15:19:19.241Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T15:20:09.086Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-12T15:20:13.618Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T15:21:42.933Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-12T15:21:48.501Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T15:21:48.560Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T15:21:48.591Z [BoilerPlate] [32minfo[39m: This User With email Is Already Exist
+2021-11-12T15:21:48.631Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T15:21:48.650Z [BoilerPlate] [31merror[39m: ORA-02289: sequence does not exist
+2021-11-12T15:28:16.835Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-12T15:28:45.141Z [BoilerPlate] [32minfo[39m: Authentication on email Started: mahbub@gmail.com
+2021-11-12T15:28:45.298Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T15:28:45.305Z [BoilerPlate] [32minfo[39m: Authenticated User Logged In The Database
+2021-11-12T15:28:53.008Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T15:30:37.915Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-12T15:30:43.164Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T15:31:37.412Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-12T15:31:39.937Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T15:32:01.187Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-12T15:32:03.510Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T15:35:17.218Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-12T15:35:21.414Z [BoilerPlate] [32minfo[39m: Authentication on email Started: mahbub@gmail.com
+2021-11-12T15:35:21.584Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T15:35:21.595Z [BoilerPlate] [32minfo[39m: Authenticated User Logged In The Database
+2021-11-12T15:35:27.164Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T15:36:27.064Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-12T15:36:33.242Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T15:36:57.247Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-12T15:36:59.493Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T15:36:59.551Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T15:36:59.597Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T15:36:59.602Z [BoilerPlate] [31merror[39m: ORA-02289: sequence does not exist
+2021-11-12T15:41:12.246Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-12T15:41:36.708Z [BoilerPlate] [32minfo[39m: Authentication on email Started: mahbub@gmail.com
+2021-11-12T15:41:36.854Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T15:41:36.861Z [BoilerPlate] [32minfo[39m: Authenticated User Logged In The Database
+2021-11-12T15:41:53.543Z [BoilerPlate] [32minfo[39m: Authentication on email Started: mahbub@gmail.com
+2021-11-12T15:41:53.571Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T15:41:53.574Z [BoilerPlate] [32minfo[39m: Authenticated User Logged In The Database
+2021-11-12T15:41:59.472Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T15:42:43.679Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-12T15:42:51.226Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T15:42:51.274Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T15:42:51.311Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T15:42:51.314Z [BoilerPlate] [31merror[39m: ORA-02289: sequence does not exist
+2021-11-12T15:43:39.678Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-12T15:43:46.517Z [BoilerPlate] [32minfo[39m: Authentication on email Started: mahbub@gmail.com
+2021-11-12T15:43:46.669Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T15:43:46.676Z [BoilerPlate] [32minfo[39m: Authenticated User Logged In The Database
+2021-11-12T15:48:33.377Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-12T15:48:39.114Z [BoilerPlate] [32minfo[39m: Authentication on email Started: mahbub@gmail.com
+2021-11-12T15:48:39.265Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T15:48:39.274Z [BoilerPlate] [32minfo[39m: Authenticated User Logged In The Database
+2021-11-12T15:49:11.501Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-12T15:49:16.204Z [BoilerPlate] [32minfo[39m: Authentication on email Started: mahbub@gmail.com
+2021-11-12T15:49:16.363Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T15:49:16.371Z [BoilerPlate] [32minfo[39m: Authenticated User Logged In The Database
+2021-11-12T15:53:19.100Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-12T15:53:23.707Z [BoilerPlate] [32minfo[39m: Authentication Started on email: mahbub@gmail.com
+2021-11-12T15:53:23.859Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T15:53:23.867Z [BoilerPlate] [32minfo[39m: Authenticated User Logged In The Database
+2021-11-12T15:55:35.771Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-12T15:55:42.689Z [BoilerPlate] [32minfo[39m: Authentication Started on email: mahbub@gmail.com
+2021-11-12T15:55:42.853Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T15:55:42.860Z [BoilerPlate] [32minfo[39m: Authenticated User Logged In The Database
+2021-11-12T15:57:37.490Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-12T15:57:43.345Z [BoilerPlate] [32minfo[39m: Authentication Started on email: mahbub@gmail.com
+2021-11-12T15:57:43.540Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T15:57:43.549Z [BoilerPlate] [32minfo[39m: Authenticated User Logged In The Database
+2021-11-12T15:58:44.522Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-12T15:58:48.787Z [BoilerPlate] [32minfo[39m: Authentication Started on email: mahbub@gmail.com
+2021-11-12T15:58:48.936Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T15:58:48.944Z [BoilerPlate] [32minfo[39m: Authenticated User Logged In The Database
+2021-11-12T16:00:01.760Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-12T16:00:04.559Z [BoilerPlate] [32minfo[39m: Authentication Started on email: mahbub@gmail.com
+2021-11-12T16:00:04.718Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T16:00:04.726Z [BoilerPlate] [32minfo[39m: Authenticated User Logged In The Database
+2021-11-12T16:05:11.811Z [BoilerPlate] [32minfo[39m: Authentication Started on email: mahbub@gmail.com
+2021-11-12T16:05:11.890Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T16:05:11.893Z [BoilerPlate] [32minfo[39m: Authenticated User Logged In The Database
+2021-11-12T16:06:59.886Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T16:08:44.991Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-12T16:09:01.982Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T16:11:27.342Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-12T16:11:33.114Z [BoilerPlate] [32minfo[39m: Authentication Started on email: mahbub@gmail.com
+2021-11-12T16:11:33.271Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T16:11:33.277Z [BoilerPlate] [32minfo[39m: Authenticated User Logged In The Database
+2021-11-12T16:13:07.288Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-12T16:13:11.430Z [BoilerPlate] [32minfo[39m: Authentication Started on email: mahbub@gmail.com
+2021-11-12T16:13:11.591Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T16:13:11.598Z [BoilerPlate] [32minfo[39m: Authenticated User Logged In The Database
+2021-11-12T16:13:19.737Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T16:13:19.773Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T16:13:19.775Z [BoilerPlate] [31merror[39m: ORA-02289: sequence does not exist
+2021-11-12T16:14:03.684Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-12T16:14:10.817Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T16:14:10.851Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T16:14:10.853Z [BoilerPlate] [31merror[39m: ORA-02289: sequence does not exist
+2021-11-12T16:14:55.266Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-12T16:15:00.170Z [BoilerPlate] [32minfo[39m: Authentication Started on email: mahbub@gmail.com
+2021-11-12T16:15:00.306Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-12T16:15:00.313Z [BoilerPlate] [32minfo[39m: Authenticated User Logged In The Database
+2021-11-12T16:15:05.094Z [BoilerPlate] [32minfo[39m: connected to the database

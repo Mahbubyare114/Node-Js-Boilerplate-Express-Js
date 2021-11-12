@@ -18,11 +18,10 @@ let myRouterPaths = [
 
 ];
 
-// app.use('/auth', authRoute); 
-// app.use('/user', userRoute);
-// instead of app.use > path > route use this:
-myRouterPaths.forEach(route=>{
-    router.use(route.path, route.route)
-})
+myRouterPaths.map((route) => router.use(route.path, route.route));
+
+// myRouterPaths.forEach(route=>{
+//     router.use(route.path, route.route)
+// })
 
 module.exports = router;

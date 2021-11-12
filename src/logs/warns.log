@@ -116,3 +116,14 @@
 2021-11-11T06:51:38.532Z [BoilerPlate] [33mwarn[39m: Someone Is Trying To Get Access Without Token!!
 2021-11-11T08:48:58.313Z [BoilerPlate] [31merror[39m: ORA-12560: TNS:protocol adapter error
 2021-11-11T09:05:36.796Z [BoilerPlate] [33mwarn[39m: Someone Is Trying To Get Access Without Token!!
+2021-11-12T08:23:54.253Z [BoilerPlate] [31merror[39m: ORA-00904: "UR"."userId": invalid identifier
+2021-11-12T08:25:20.517Z [BoilerPlate] [31merror[39m: ORA-00904: "UR"."userId": invalid identifier
+2021-11-12T08:26:26.757Z [BoilerPlate] [31merror[39m: ORA-00904: "UR"."userId": invalid identifier
+2021-11-12T08:34:59.343Z [BoilerPlate] [31merror[39m: NJS-005: invalid value for parameter 2
+2021-11-12T13:46:21.032Z [BoilerPlate] [33mwarn[39m: Someone Is Trying To Get Access Without Token!!
+2021-11-12T14:29:21.959Z [BoilerPlate] [33mwarn[39m: Someone Is Trying To Get Access Without Token!!
+2021-11-12T15:21:48.650Z [BoilerPlate] [31merror[39m: ORA-02289: sequence does not exist
+2021-11-12T15:36:59.602Z [BoilerPlate] [31merror[39m: ORA-02289: sequence does not exist
+2021-11-12T15:42:51.314Z [BoilerPlate] [31merror[39m: ORA-02289: sequence does not exist
+2021-11-12T16:13:19.775Z [BoilerPlate] [31merror[39m: ORA-02289: sequence does not exist
+2021-11-12T16:14:10.853Z [BoilerPlate] [31merror[39m: ORA-02289: sequence does not exist

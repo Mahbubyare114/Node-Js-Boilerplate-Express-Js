@@ -1,15 +1,15 @@
-const express = require('express');
-const router = express.Router();
-const {authController} = require('../../controller');
-const validate = require('../../middlewares/validator');
-const {authValidator} = require("../../validations");
-const {authValidatorMiddleware} = require('../../middlewares');
+const express = require('express'); // import express
+const router = express.Router(); // import express router
+const {authController} = require('../../controller'); // import authController
+const { permissionController } = require('../../controller'); // import permission controller
+const { validate } = require('../../middlewares'); // import validate any schemas middleware
+const {authValidator} = require("../../validations"); // import joi validation
+const { authValidatorMiddleware, authrizationMiddleware } = require('../../middlewares');
 
-
-
-
-
+// end points with authentication and authrization
 router.post('/login', validate(authValidator.login), authController.login);
-router.post('/register', authValidatorMiddleware.auth , validate(authValidator.register) , authController.register);
+router.get('/permission', authValidatorMiddleware, authrizationMiddleware, permissionController.permissions); 
+router.post('/register', authValidatorMiddleware,authrizationMiddleware('createUser'), validate(authValidator.register) , authController.register);
+
 
 module.exports = router;
