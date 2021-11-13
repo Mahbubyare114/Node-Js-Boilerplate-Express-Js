@@ -43,10 +43,11 @@ const auth = (req, res, next) => {
  const authrization  = (apiName) => (req, res, next) => {
     try {
       let data = myCache.get('decodedToken');
-      console.log(data);
+      console.log(data.payload);
 
-      let userRole = data.payload.rolename;
-      console.log(userRole);
+      let userRole = data.payload;
+      // console.log(`user role: ${userRole}`);
+      
 
       let permissions = permissionService.getRolePermissions()
       .then(res=>{

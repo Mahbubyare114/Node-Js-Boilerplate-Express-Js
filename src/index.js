@@ -76,13 +76,29 @@ res.status(status).send(new ApiError(status, error));
 });
 
 // All The Exceptions Error Handling (Custom Error and System Error Middleware)
-
 app.use((err, req, res, next) => {
   res.status(err.status).send(err);
-  next();
+  next(err);
 });
 
+// default error handler
+// app.use((err, req, res, next) => {
+//   if (res.headersSent) {
+//     return next(err)
+//   }
+//   res.status(500)
+//   res.render('error', { error: err })
+// })
 
+
+// // clientErrorHandler
+// app.use((err, req, res, next) => {
+//   if (req.xhr) {
+//     res.status(500).send({ error: 'Something failed!' })
+//   } else {
+//     next(err)
+//   }
+// });
 
 app.listen(port, () =>{
   logger.info(`app is listening on port ${BASE_URL}:${port}`);

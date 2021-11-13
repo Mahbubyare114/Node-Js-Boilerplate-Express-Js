@@ -22,8 +22,10 @@ const login = async(email, password) =>{
    *  Generate jwt (json web token) to the Authenticated User
    *  Which Consist: 1-object  2-private key  3-time or expiration
    */
-     let token = jwt.sign({user}, process.env.JWT_SECRET_KEY , { expiresIn: '20m' }); //whole obj
-     //let token = jwt.sign({USERID: user[0].USERID, ROLENAME: user[0].ROLENAME}, process.env.JWT_SECRET_KEY , { expiresIn: '30m' });
+    //  let token = jwt.sign({user}, process.env.JWT_SECRET_KEY , { expiresIn: '20m' }); //whole obj
+    // console.log(user.USERID);
+     let token = jwt.sign({user},
+         process.env.JWT_SECRET_KEY ); // , { expiresIn: '30m'} 
     
 
     return {accessToken: token};
