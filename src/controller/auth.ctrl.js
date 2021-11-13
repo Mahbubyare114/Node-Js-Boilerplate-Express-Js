@@ -1,5 +1,5 @@
 const status = require('http-status');
-const { authServices } = require('../services')
+const { authService } = require('../service')
 const { ApiResponse } = require('../payload/ApiResponse');
 const { ApiError } = require('../payload/ApiError');
 const {handleAsync} = require('../utils/util');
@@ -16,7 +16,7 @@ const login = handleAsync(async(req, res) => {
 /**
  * return Api Response
  */    
-    let loginResponse = await authServices.login(email, password);
+    let loginResponse = await authService.login(email, password);
 
     let message = res.__('loginSuccess'); // i18n multi-lang support
     
@@ -40,8 +40,8 @@ const register = handleAsync(async(req, res) => {
  /**
  * Check If User Email Is Already Exist
  */
-  let emailExist = await authServices.isEmailExist(user.email); 
-  console.log(`is email exist: ${emailExist}`)
+  let emailExist = await authService.isEmailExist(user.email); 
+  console.log(`is email exist in auth ctrl: ${emailExist}`)
 
     if(emailExist){
 
@@ -54,7 +54,7 @@ const register = handleAsync(async(req, res) => {
   /**
  * If Not Exist Then Register New User
  */
-   let registerUserStatus = await authServices.register(user);
+   let registerUserStatus = await authService.register(user);
 
    if(registerUserStatus){
     

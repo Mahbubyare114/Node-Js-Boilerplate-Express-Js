@@ -9,10 +9,10 @@
   - locales (i18n multi-lang json files)
   - logs
   - middlewares
-  - models
+  - model
   - payload
   - routes
-  - services
+  - service
   - utils
   - validations
   - index file (main)
@@ -29,7 +29,7 @@
 - i18n -> multi-language suport (Lightweight translation module with dynamic json storage)
 - joi -> The most powerful schema description language and data validator for JavaScript.
 - jsonwebtoken -> JSON Web Token implementation (symmetric and asymmetric)
-- morgan -> To Log API Calls
+- morganLogger -> To Log API Calls
 - node-cache -> internal caching
 - oracledb -> A Node.js module for Oracle Database access
 - winston -> use for logging purposes

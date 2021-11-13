@@ -2,7 +2,7 @@ const status = require('http-status'); // import http status
 const logger = require('../config/logger'); // import winston logger
 const { ApiError } = require('../payload/ApiError'); // import Api Error
 const { ApiResponse } = require('../payload/ApiResponse'); // import Api Response
-const { userServices } = require('../services'); // import User Services
+const { userService } = require('../service'); // import User service
 const {handleAsync} = require('../utils/util'); // import handleAsync from util
 
 // ========== User API Service Calls Starts From Here  ========== //
@@ -15,7 +15,7 @@ const {handleAsync} = require('../utils/util'); // import handleAsync from util
 
     let message = res.__('allUsers'); // i18n support for res
 
-   let users = await userServices.getAllUsers();
+   let users = await userService.getAllUsers();
    res
    .status(status.OK)
    .send(new ApiResponse(status.OK, message , users));
@@ -36,13 +36,13 @@ const {handleAsync} = require('../utils/util'); // import handleAsync from util
 /**
  * Check If User Email Is Already Exist
  */
-  let emailExist = await userServices.isEmailExist(user.email); 
+  let emailExist = await userService.isEmailExist(user.email); 
   console.log(`is email exist: ${emailExist}`)
 
     if(emailExist){
 
         let message = res.__('singleUser'); // i18n support for res
-        let getUserByEmail = await userServices.getUserByEmail(user.email);
+        let getUserByEmail = await userService.getUserByEmail(user.email);
 
          res.status(status.OK)
         .send(new ApiResponse (status.OK , message, getUserByEmail));  
@@ -65,14 +65,14 @@ const {handleAsync} = require('../utils/util'); // import handleAsync from util
   /**
  * Get The User
  */
-// let user = await userServices.createUser(req.body);
+// let user = await userService.createUser(req.body);
 
     let user = req.body;
     console.log(`Executing create user from controller ${user}`);
 /**
  * Check If User email is Already Exist
  */
-    if(await userServices.isEmailExist(user.email)){
+    if(await userService.isEmailExist(user.email)){
         let message = res.__('emailExists');
        
          return res.status(status.NOT_ACCEPTABLE)
@@ -82,7 +82,7 @@ const {handleAsync} = require('../utils/util'); // import handleAsync from util
   /**
  * If Not Exist Then Create New User
  */
-    let createUserStatus = await userServices.createUser(user);
+    let createUserStatus = await userService.createUser(user);
 
     if(createUserStatus){
         let userCreatedMsg = res.__('userCreated');
@@ -117,7 +117,7 @@ const update = handleAsync( async(req, res) => {
 /**
  * Check If User email is Not Exist in Order to Update
  */
-    if(!userServices.isEmailExist(user.email)){
+    if(!userService.isEmailExist(user.email)){
         logger.warn("Someone Trying To Update User That Does't Exist");
 
         let message = res.__('notExist');
@@ -128,7 +128,7 @@ const update = handleAsync( async(req, res) => {
  /**
  *  Update User If It Exists
  */
-   let updatedUser = await userServices.updateUser(user);
+   let updatedUser = await userService.updateUser(user);
    console.log(`updating user: ${updatedUser}`)
 
     if(updatedUser){
@@ -160,7 +160,7 @@ console.log(`get user to delete: ${user}`)
 /**
  * Check If User Already Exist's in Order to Delete
  */
-if(!userServices.isEmailExist(user.email)){
+if(!userService.isEmailExist(user.email)){
 
     let message = res.__('notExist');
    return res.status(status.NOT_ACCEPTABLE)
@@ -170,7 +170,7 @@ if(!userServices.isEmailExist(user.email)){
 /**
  * Delete User If It Exists
  */
-let deletedUser = userServices.deleteUser(user);
+let deletedUser = userService.deleteUser(user);
 console.log(`deleting user: ${deletedUser}`)
 
 if(deletedUser){

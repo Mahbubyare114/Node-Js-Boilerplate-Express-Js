@@ -2,7 +2,7 @@ require('dotenv').config(); // dotenv package import
 const { config } = require('dotenv');
 const express = require('express');
 const logger = require('./config/logger');
-const { morganMiddleware } = require('./middlewares'); // require morgan middleware
+const { morganLogger } = require('./middlewares'); // require morganLogger middleware
 const { ApiError } = require('./payload/ApiError');
 const httpStatus = require('http-status');
 const cors = require('cors');       // cross origin resourse sharing
@@ -47,7 +47,7 @@ const port = process.env.PORT;
  */
 
 app.use(express.json());
-app.use(morganMiddleware); // use morgan middlleware in a seperate file
+app.use(morganLogger); // use morganLogger middlleware in a seperate file
 
 app.use(cors());    // enabling CORS for all request
 app.use(helmet());  // adding Helmet to enhance your API's Security

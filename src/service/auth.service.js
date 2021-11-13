@@ -1,5 +1,5 @@
 const logger = require("../config/logger");
-const { userModel } = require('../models');
+const { userModel } = require('../model');
 const { ApiError } = require("../payload/ApiError");
 const status = require('http-status');
 const jwt = require('jsonwebtoken');
@@ -23,11 +23,9 @@ const login = async(email, password) =>{
    *  Generate jwt (json web token) to the Authenticated User
    *  Which Consist: 1-object  2-private key  3-time or expiration
    */
-    //  let token = jwt.sign({user}, process.env.JWT_SECRET_KEY , { expiresIn: '20m' }); //whole obj
-    // console.log(user.USERID);
-     let token = jwt.sign({user},
-         process.env.JWT_SECRET_KEY ); // , { expiresIn: '30m'} 
-    
+  
+     let token = jwt.sign({user}, process.env.JWT_SECRET_KEY , { expiresIn: '30m'} ); 
+     console.log(user.rolename);
 
     return {accessToken: token};
 }

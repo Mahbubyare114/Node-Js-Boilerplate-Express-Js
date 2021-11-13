@@ -2,7 +2,7 @@ let status = require('http-status');
 const {ApiError} = require('../payload/ApiError');
 const logger = require('../config/logger');
 const jwt = require('jsonwebtoken');
-const { permissionService } = require('../services');
+const { permissionService } = require('../service');
 const NodeCache = require("node-cache"); // Initialize
 const myCache = new NodeCache();
 
@@ -46,7 +46,7 @@ const auth = (req, res, next) => {
       console.log(data.payload);
 
       let userRole = data.payload;
-      // console.log(`user role: ${userRole}`);
+      console.log(`user role: ${userRole}`);
       
 
       let permissions = permissionService.getRolePermissions()

@@ -1,5 +1,5 @@
 const logger = require("../config/logger");
-const { userModel } = require('../models');
+const { userModel } = require('../model');
 
 
 // ========== Bussiness Logic Starts From Here  ========== //

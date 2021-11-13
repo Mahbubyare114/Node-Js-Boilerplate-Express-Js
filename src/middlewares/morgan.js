@@ -2,9 +2,9 @@ const morgan = require('morgan');
 const logger = require("../config/logger");
 
 
-const morganMiddleware = morgan(
+const morganLogger = morgan(
     
  "tiny",
       { stream : logger.stream.write } 
 );
-module.exports = morganMiddleware;
+module.exports = morganLogger;
