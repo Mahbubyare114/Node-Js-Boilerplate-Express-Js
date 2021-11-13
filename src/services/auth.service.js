@@ -10,8 +10,9 @@ const login = async(email, password) =>{
 
     let user = await userModel.getUserByEmailAndPassword(email, password);
    console.log(`Executing getUserByEmailAndPassword call to model from auth service ${email}`);
-
+   console.log(user);
     if (!user || user.length <= 0) {
+       
 
         let message = res.__('incorrectEmailOrPassError');
         throw new ApiError(status.UNAUTHORIZED, message);

@@ -8,7 +8,7 @@ const { authValidatorMiddleware, authrizationMiddleware } = require('../../middl
 
 // end points with authentication and authrization
 router.post('/login', validate(authValidator.login), authController.login);
-router.get('/permission', authValidatorMiddleware, authrizationMiddleware, permissionController.permissions); 
+router.get('/permission', authValidatorMiddleware, authrizationMiddleware('viewAllPermissions'), permissionController.permissions); 
 router.post('/register', authValidatorMiddleware,authrizationMiddleware('createUser'), validate(authValidator.register) , authController.register);
 
 

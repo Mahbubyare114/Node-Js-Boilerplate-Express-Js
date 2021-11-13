@@ -75,30 +75,26 @@ app.use((req, res , next) => {
 res.status(status).send(new ApiError(status, error));
 });
 
+// All The Exceptions Error Handling (Custom Error or System Error Middleware)
+// app.use((err, req, res, next) => {
+//   res.status(err.status).send(err);
+//   next(err);
+// });
+
 // All The Exceptions Error Handling (Custom Error and System Error Middleware)
-app.use((err, req, res, next) => {
-  res.status(err.status).send(err);
-  next(err);
+app.use((err, req, res, next)=> {
+  let status = err.status || 500; // status code
+
+  let errors = [
+    { status: 500, description: "Internal Server Error" }, // syste error
+    { status: 400, description: "Bad Request" }, // custom error
+  ].filter((err) => err.status == status);
+  let desc = errors.length ? errors[0].description : 0;
+  let error = (!desc ? 0 : new ApiError(status, desc)) || err;
+  console.error(err);
+  res.status(status).send(error);
 });
 
-// default error handler
-// app.use((err, req, res, next) => {
-//   if (res.headersSent) {
-//     return next(err)
-//   }
-//   res.status(500)
-//   res.render('error', { error: err })
-// })
-
-
-// // clientErrorHandler
-// app.use((err, req, res, next) => {
-//   if (req.xhr) {
-//     res.status(500).send({ error: 'Something failed!' })
-//   } else {
-//     next(err)
-//   }
-// });
 
 app.listen(port, () =>{
   logger.info(`app is listening on port ${BASE_URL}:${port}`);

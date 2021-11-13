@@ -92,3 +92,8 @@
 2021-11-13T06:13:07.164Z [BoilerPlate] [31merror[39m: ORA-02289: sequence does not exist
 2021-11-13T06:17:03.832Z [BoilerPlate] [31merror[39m: ORA-02289: sequence does not exist
 2021-11-13T06:57:50.481Z [BoilerPlate] [31merror[39m: ORA-02289: sequence does not exist
+2021-11-13T07:45:39.844Z [BoilerPlate] [31merror[39m: ORA-02289: sequence does not exist
+2021-11-13T07:46:59.560Z [BoilerPlate] [31merror[39m: ORA-02289: sequence does not exist
+2021-11-13T07:47:47.509Z [BoilerPlate] [31merror[39m: NJS-044: bind object must contain one of the following keys: "dir", "type", "maxSize", or "val"
+2021-11-13T16:30:58.113Z [BoilerPlate] [31merror[39m: ORA-02289: sequence does not exist
+2021-11-13T16:34:56.547Z [BoilerPlate] [31merror[39m: ORA-02289: sequence does not exist

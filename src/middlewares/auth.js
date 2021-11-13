@@ -62,6 +62,7 @@ const auth = (req, res, next) => {
        
         next(new ApiError(401, "You Can Not Access This Endpoint, Ask For Permission!!")); 
   
+        
       })
       .catch(err=> Promise.reject(err));
   

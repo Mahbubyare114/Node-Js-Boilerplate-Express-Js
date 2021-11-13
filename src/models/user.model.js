@@ -62,7 +62,7 @@ return false;
 
 
     let result = await db.executeQuery(`UPDATE USERS SET PASSWORD=:password,
-    FULLNAME= :fullName, ACTIVE= :active WHERE EMAIL= :email`, [password, fullName, active, email])
+    FULLNAME= :fullName WHERE EMAIL= :email`, [password, fullName, email])
    
     if (result.rowsAffected === 1){
 
