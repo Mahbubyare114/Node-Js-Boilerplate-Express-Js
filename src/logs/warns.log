@@ -143,3 +143,9 @@
 2021-11-14T10:53:53.416Z [BoilerPlate] [31merror[39m: NJS-044: bind object must contain one of the following keys: "dir", "type", "maxSize", or "val"
 2021-11-14T10:59:32.791Z [BoilerPlate] [31merror[39m: ORA-00942: table or view does not exist
 2021-11-14T11:22:08.864Z [BoilerPlate] [31merror[39m: NJS-044: bind object must contain one of the following keys: "dir", "type", "maxSize", or "val"
+2021-11-14T19:23:47.784Z [BoilerPlate] [31merror[39m: NJS-005: invalid value for parameter 2
+2021-11-14T19:31:40.999Z [BoilerPlate] [31merror[39m: ORA-01722: invalid number
+2021-11-14T21:00:36.334Z [BoilerPlate] [31merror[39m: ORA-01036: illegal variable name/number
+2021-11-14T21:08:08.521Z [BoilerPlate] [31merror[39m: ORA-12170: TNS:Connect timeout occurred
+2021-11-14T21:10:44.254Z [BoilerPlate] [31merror[39m: NJS-044: bind object must contain one of the following keys: "dir", "type", "maxSize", or "val"
+2021-11-14T21:15:48.646Z [BoilerPlate] [31merror[39m: DPI-1080: connection was closed by ORA-3113

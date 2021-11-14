@@ -5,7 +5,7 @@ const { userModel } = require('../model');
 // ========== Bussiness Logic Starts From Here  ========== //
 
 /**
- * check isEmailExist, if true throw error else create
+ * check isEmailExist, if true throw error else create or update or delete
  */
 const isEmailExist = async(email) => {
     console.log(`Executing isEmailExist from service ${email}`);
@@ -37,8 +37,8 @@ const createUser = async(user) => {
 const updateUser = async(user) => {
     console.log(`Executing updateUser from service ${user}`);
 
-    let userUpdated = await userModel.update(user);
-    return userUpdated;
+    let updatedUser = await userModel.update(user);
+    return updatedUser;
 }
 
 /**

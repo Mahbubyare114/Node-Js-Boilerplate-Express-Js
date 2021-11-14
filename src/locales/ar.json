@@ -3,14 +3,17 @@
     "loginSuccess"   : "لقد سجلت الدخول",
     "notImplemented" : "لم تنفذ",
     "allUsers"       : "جميع المستخدمين هنا",
-    "singleUser"     : "Successfuly Fetched One User",
-    "notExist"       : "معرف المستخدم غير موجود",
-    "IdExist"        : "معرف المستخدم موجود بالفعل",
+    "singleUser"     : "تم التقاط بيانات مستخدم واحد",
+    "notExist"       : "معرّف المستخدم غير موجود",
+    "IdExist"        : "معرّف المستخدم موجود بالفعل",
     "emailExists"    : "البريد الإلكتروني للمستخدم موجود بالفعل",
+    "emailNotExists"    : "البريد الإلكتروني للمستخدم غير موجود",
     "userUpdated"    : "تم تحديث المستخدم بنجاح",
+    "updateError"    : "لم تتم عملية التحديث بنجاح، حاول مرة أخرى",
     "userDeleted"    : "تم حذف المستخدم بنجاح",
     "internalErrorMsg" : "هناك خطأ ما!",
     "incorrectEmailOrPassError" : "البريد الالكتروني او كلمة المرور غير صحيحة",
     "registerSuccess": "انت تملك حساب مصرفي. يرجى التحقق من بريدك الإلكتروني للتحقق من الحساب",
-    "registerError": "حدث خطأ ما في التسجيل يرجى المحاولة مرة أخرى"
+    "registerError": "حدث خطأ ما في التسجيل يرجى المحاولة مرة أخرى",
+    "allpermissions" : "list of all permission available"
 }

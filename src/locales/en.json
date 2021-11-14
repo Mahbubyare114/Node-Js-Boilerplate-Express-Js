@@ -1,17 +1,20 @@
 
 {
     "amountTransfer" : "your amount has been transfered",
-    "loginSuccess"   : "You are logged in",
-    "notImplemented" : "Not Implemented",
-    "allUsers"       : "All Users Are Here",
-    "singleUser"     : "Successfuly Fetched One User",
-    "notExist"       : "User Id Doesn't Exist",
-    "IdExist"        : "User is already Exist",
-    "emailExists"    : "User email is already Exist",
-    "userUpdated"    : "User Updated Successfully",
-    "userDeleted"    : "User is Deleted Successfully",
-    "internalErrorMsg" : "Something We nt Wrong!",
-    "incorrectEmailOrPassError" : "Email or Password Is Incorrect",
-    "registerSuccess": "You have been registered. Please check your email to verify account",
-    "registerError"  : "Something went wrong with the registration please try again"
+    "loginSuccess"   : "you are logged in",
+    "notImplemented" : "not implemented",
+    "allUsers"       : "all users Are captured",
+    "singleUser"     : "one User Data was captured",
+    "notExist"       : "user Id Doesn't Exist",
+    "IdExist"        : "user is already Exist",
+    "emailExists"    : "user email is already Exist",
+    "emailNotExists"    : "user email is not Exist",
+    "userUpdated"    : "user Updated Successfully",
+    "updateError"    : "user was not updated, try again!",
+    "userDeleted"    : "user is Deleted Successfully",
+    "internalErrorMsg" : "something Went Wrong!",
+    "incorrectEmailOrPassError" : "email or password is incorrect",
+    "registerSuccess": "you have been registered. Please check your email to verify account",
+    "registerError"  : "something went wrong with the registration, please try again",
+    "allpermissions" : "list of all permission available"
 }

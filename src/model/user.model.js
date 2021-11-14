@@ -56,7 +56,7 @@ return false;
     let email = user.email;
     let password = user.password;
     let fullName = user.fullName;
-    let active = 0;
+    let active = 1;
 
 
     let result = await db.executeQuery(`UPDATE USERS SET PASSWORD=:password,
@@ -64,7 +64,7 @@ return false;
    
     if (result.rowsAffected === 1){
 
-    logger.info('Is User Is Updated Successfully!');
+    logger.info('User Is Updated Successfully!');
      return true;
 
     }
@@ -76,10 +76,8 @@ return false;
  * Delete Single User By Email In Oracle Db
  */
 const userDelete = async(email)=>{
-    // let useremail = email.email;
     let result = await db.executeQuery(`DELETE USERS WHERE email=:email`,[email]);
   
-
     logger.info('A User Is Being Deleted!');
     return result;
 

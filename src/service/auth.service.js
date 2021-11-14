@@ -7,11 +7,11 @@ const jwt = require('jsonwebtoken');
 
 const login = async(email, password) =>{
     logger.info(`Authentication Started on email: ${email}`);
-
     console.log(`Executing getUserByEmailAndPassword call to model from auth service ${email}`);
+
     let user = await userModel.getUserByEmailAndPassword(email, password);
-    console.log(`User: ${user.email}`);
-    
+    console.log(`User Entered: ${user.email}`);
+   
     if (!user || user.length <= 0) {
         
         let message = res.__('incorrectEmailOrPassError');
@@ -23,9 +23,9 @@ const login = async(email, password) =>{
    *  Which Consist: 1-object  2-private key  3-time or expiration
    */
   
-     let token = jwt.sign({userid: user.userid, rolename: user.rolename}, process.env.JWT_SECRET_KEY , { expiresIn: '30m'} ); 
-     console.log(`userId in authentication  : ${user.userid}`);
-     console.log(`userRole in authentication :${user.rolename}`);
+    let token = jwt.sign({userid: user.userid, rolename: user.rolename}, process.env.JWT_SECRET_KEY , { expiresIn: '30m'} ); 
+    console.log(`userId in authentication   : ${user.userid}`);
+    console.log(`userRole in authentication : ${user.rolename}`);
 
 
     return {accessToken: token};
@@ -51,7 +51,7 @@ const register = async (user) => {
 /**
  * check isEmailExist, if true throw error else register
  */
- const isEmailExist = async(email) => {
+const isEmailExist = async(email) => {
     console.log(`Executing isEmailExist from auth service ${email}`);
     
     if(await userModel.isEmailExist(email)){

@@ -1,8 +1,9 @@
 const {executeQuery} = require('../config/database'); // get db conn
+const logger = require('../config/logger');
 
 // get all permissions list
 const getPermissions = async () => {
-    return await executeQuery('select * from permissions'); // return all permission
+    return await executeQuery('select * from permissions',[]); // return all permission
   };
  
 

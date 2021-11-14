@@ -6,6 +6,6 @@ const status = require('http-status'); // import http status
 
 const permissions = handleAsync(async (req, res) => {
     let permissionList = await permissionService.getPermissions() 
-    res.status(status.OK).send(new ApiResponse(status.OK, permissionList));
+    res.status(status.OK).send(new ApiResponse(status.OK, res.__('allpermissions'),permissionList));
   });
   module.exports = { permissions };

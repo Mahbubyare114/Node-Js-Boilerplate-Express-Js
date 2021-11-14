@@ -37,7 +37,7 @@ const {handleAsync} = require('../utils/util'); // import handleAsync from util
  * Check If User Email Is Already Exist
  */
   let emailExist = await userService.isEmailExist(user.email); 
-  console.log(`is email exist: ${emailExist}`)
+  console.log(`is email exist to get user: ${emailExist}`)
 
     if(emailExist){
 
@@ -49,7 +49,7 @@ const {handleAsync} = require('../utils/util'); // import handleAsync from util
 
         
     }
-    let notExistMessage = res.__('notExist');  // read msg from locales notExist
+    let notExistMessage = res.__('emailNotExists');  // read msg from locales notExist
     throw new ApiError(status.NOT_ACCEPTABLE, notExistMessage)
                                        
 });
