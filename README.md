@@ -29,7 +29,7 @@
 - i18n -> multi-language suport (Lightweight translation module with dynamic json storage)
 - joi -> The most powerful schema description language and data validator for JavaScript.
 - jsonwebtoken -> JSON Web Token implementation (symmetric and asymmetric)
-- morganLogger -> To Log API Calls
+- morgan -> To Log API Calls
 - node-cache -> internal caching
 - oracledb -> A Node.js module for Oracle Database access
 - winston -> use for logging purposes

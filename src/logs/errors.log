@@ -100,3 +100,7 @@
 2021-11-13T21:13:51.720Z [BoilerPlate] [31merror[39m: NJS-005: invalid value for parameter 2
 2021-11-13T21:18:13.967Z [BoilerPlate] [31merror[39m: ORA-02289: sequence does not exist
 2021-11-13T22:02:22.432Z [BoilerPlate] [31merror[39m: NJS-005: invalid value for parameter 2
+2021-11-14T10:52:42.138Z [BoilerPlate] [31merror[39m: NJS-044: bind object must contain one of the following keys: "dir", "type", "maxSize", or "val"
+2021-11-14T10:53:53.416Z [BoilerPlate] [31merror[39m: NJS-044: bind object must contain one of the following keys: "dir", "type", "maxSize", or "val"
+2021-11-14T10:59:32.791Z [BoilerPlate] [31merror[39m: ORA-00942: table or view does not exist
+2021-11-14T11:22:08.864Z [BoilerPlate] [31merror[39m: NJS-044: bind object must contain one of the following keys: "dir", "type", "maxSize", or "val"

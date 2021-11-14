@@ -8,15 +8,14 @@ const jwt = require('jsonwebtoken');
 const login = async(email, password) =>{
     logger.info(`Authentication Started on email: ${email}`);
 
+    console.log(`Executing getUserByEmailAndPassword call to model from auth service ${email}`);
     let user = await userModel.getUserByEmailAndPassword(email, password);
-   console.log(`Executing getUserByEmailAndPassword call to model from auth service ${email}`);
-   console.log(user);
+    console.log(`User: ${user.email}`);
+    
     if (!user || user.length <= 0) {
-       
-
+        
         let message = res.__('incorrectEmailOrPassError');
         throw new ApiError(status.UNAUTHORIZED, message);
-       
     }
 
    /**
@@ -24,30 +23,16 @@ const login = async(email, password) =>{
    *  Which Consist: 1-object  2-private key  3-time or expiration
    */
   
-     let token = jwt.sign({user}, process.env.JWT_SECRET_KEY , { expiresIn: '30m'} ); 
-     console.log(user.rolename);
+     let token = jwt.sign({userid: user.userid, rolename: user.rolename}, process.env.JWT_SECRET_KEY , { expiresIn: '30m'} ); 
+     console.log(`userId in authentication  : ${user.userid}`);
+     console.log(`userRole in authentication :${user.rolename}`);
+
 
     return {accessToken: token};
 }
 
-
-// ========== Bussiness Logic Starts From Here  ========== //
-
-/**
- * check isEmailExist, if true throw error else register
- */
- const isEmailExist = async(email) => {
-    console.log(`Executing isEmailExist from service ${email}`);
-    
-    if(await userModel.isEmailExist(email)){
-        return true;         
-    } 
-    return false;
-} 
-// ========== Bussiness Logic Ends To Here  ========== //
-
 /** 
- * Give Call To Register User inside The Model if it's not exist
+ * Give Call To Register User inside The Model after checking isEmailExist
  */
 const register = async (user) => {
     let err = '';
@@ -60,6 +45,21 @@ const register = async (user) => {
 
     return {result, err};
 }
+
+// ========== Bussiness Logic Starts From Here  ========== //
+
+/**
+ * check isEmailExist, if true throw error else register
+ */
+ const isEmailExist = async(email) => {
+    console.log(`Executing isEmailExist from auth service ${email}`);
+    
+    if(await userModel.isEmailExist(email)){
+        return true;         
+    } 
+    return false;
+} 
+// ========== Bussiness Logic Ends To Here  ========== //
 
 module.exports = {
     login,

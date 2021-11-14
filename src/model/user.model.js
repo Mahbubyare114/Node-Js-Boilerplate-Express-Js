@@ -9,17 +9,15 @@ const logger = require("../config/logger");
 const getAllUsers = async () => {
 
     logger.info('All Users Are Being Fetched');
-    return await db.executeQuery(`SELECT * FROM USERS`,[]);
+    return await db.executeQuery(`SELECT USERID, FULLNAME, EMAIL, ACTIVE FROM USERS`,[]);
 }
 
 /**
  * Get Single User From Oracle Db
  */
 const getUserByEmail = async(email) => {
-
-    //let email = email.email;
-
-    let result = await db.executeQuery(`SELECT * FROM USERS WHERE EMAIL= :email`, [email]);
+    let result = await db.executeQuery(`SELECT USERID, FULLNAME, EMAIL, ACTIVE FROM USERS WHERE EMAIL= :email`
+    , [email]);
     
     
 

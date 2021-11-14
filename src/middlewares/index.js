@@ -1,7 +1,7 @@
 const validate = require('./validator');
 const morganLogger = require('./morgan');
-const authentication = require('./auth').auth;
-const authorization = require('./auth').authrization;
+const {authentication , authorization} = require('./auth');
+
 
 
 module.exports = {
