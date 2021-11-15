@@ -149,3 +149,12 @@
 2021-11-14T21:08:08.521Z [BoilerPlate] [31merror[39m: ORA-12170: TNS:Connect timeout occurred
 2021-11-14T21:10:44.254Z [BoilerPlate] [31merror[39m: NJS-044: bind object must contain one of the following keys: "dir", "type", "maxSize", or "val"
 2021-11-14T21:15:48.646Z [BoilerPlate] [31merror[39m: DPI-1080: connection was closed by ORA-3113
+2021-11-15T07:44:39.480Z [BoilerPlate] [31merror[39m: ORA-12170: TNS:Connect timeout occurred
+2021-11-15T10:02:49.780Z [BoilerPlate] [33mwarn[39m: Someone Is Trying To Get Access Without Token!!
+2021-11-15T10:05:42.447Z [BoilerPlate] [33mwarn[39m: Someone Is Trying To Get Access Without Token!!
+2021-11-15T10:07:04.603Z [BoilerPlate] [33mwarn[39m: Someone Is Trying To Get Access Without Token!!
+2021-11-15T10:10:05.451Z [BoilerPlate] [33mwarn[39m: Someone Is Trying To Get Access Without Token!!
+2021-11-15T10:10:33.929Z [BoilerPlate] [31merror[39m: NJS-044: bind object must contain one of the following keys: "dir", "type", "maxSize", or "val"
+2021-11-15T10:26:37.284Z [BoilerPlate] [31merror[39m: NJS-044: bind object must contain one of the following keys: "dir", "type", "maxSize", or "val"
+2021-11-15T10:32:30.809Z [BoilerPlate] [33mwarn[39m: Someone Is Trying To Get Access Without Token!!
+2021-11-15T10:36:39.006Z [BoilerPlate] [33mwarn[39m: Someone Is Trying To Get Access Without Token!!

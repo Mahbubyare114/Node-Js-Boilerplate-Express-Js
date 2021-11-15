@@ -1995,3 +1995,75 @@
 2021-11-14T21:10:44.254Z [BoilerPlate] [31merror[39m: NJS-044: bind object must contain one of the following keys: "dir", "type", "maxSize", or "val"
 2021-11-14T21:10:44.741Z [BoilerPlate] [32minfo[39m: A User Is Being Deleted!
 2021-11-14T21:15:48.646Z [BoilerPlate] [31merror[39m: DPI-1080: connection was closed by ORA-3113
+2021-11-15T07:21:00.935Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-15T07:42:53.625Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-15T07:44:18.101Z [BoilerPlate] [32minfo[39m: Authentication Started on email: mahbub@gmail.com
+2021-11-15T07:44:39.480Z [BoilerPlate] [31merror[39m: ORA-12170: TNS:Connect timeout occurred
+2021-11-15T07:45:16.743Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-15T07:45:20.534Z [BoilerPlate] [32minfo[39m: Authentication Started on email: mahbub@gmail.com
+2021-11-15T07:45:20.746Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-15T07:45:20.771Z [BoilerPlate] [32minfo[39m: Authenticated User Logged In The Database
+2021-11-15T10:02:49.780Z [BoilerPlate] [33mwarn[39m: Someone Is Trying To Get Access Without Token!!
+2021-11-15T10:04:01.474Z [BoilerPlate] [32minfo[39m: Authentication Started on email: mahbub@gmail.com
+2021-11-15T10:04:01.594Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-15T10:04:01.598Z [BoilerPlate] [32minfo[39m: Authenticated User Logged In The Database
+2021-11-15T10:04:07.084Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-15T10:04:07.154Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-15T10:05:42.447Z [BoilerPlate] [33mwarn[39m: Someone Is Trying To Get Access Without Token!!
+2021-11-15T10:06:14.264Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-15T10:06:14.269Z [BoilerPlate] [32minfo[39m: Calling Create User
+2021-11-15T10:06:14.311Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-15T10:06:14.351Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-15T10:06:14.372Z [BoilerPlate] [32minfo[39m: A New User Is Being Inserted!
+2021-11-15T10:07:04.603Z [BoilerPlate] [33mwarn[39m: Someone Is Trying To Get Access Without Token!!
+2021-11-15T10:07:23.006Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-15T10:07:23.036Z [BoilerPlate] [32minfo[39m: All Users Are Being Fetched
+2021-11-15T10:07:23.077Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-15T10:07:56.887Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-15T10:07:56.930Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-15T10:07:56.980Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-15T10:07:56.988Z [BoilerPlate] [32minfo[39m: A User By Email Is Being Fetched
+2021-11-15T10:10:05.451Z [BoilerPlate] [33mwarn[39m: Someone Is Trying To Get Access Without Token!!
+2021-11-15T10:10:33.837Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-15T10:10:33.903Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-15T10:10:33.929Z [BoilerPlate] [31merror[39m: NJS-044: bind object must contain one of the following keys: "dir", "type", "maxSize", or "val"
+2021-11-15T10:10:33.933Z [BoilerPlate] [32minfo[39m: A User Is Being Deleted!
+2021-11-15T10:10:33.934Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-15T10:25:34.713Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-15T10:26:13.021Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-15T10:26:37.184Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-15T10:26:37.251Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-15T10:26:37.282Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-15T10:26:37.284Z [BoilerPlate] [31merror[39m: NJS-044: bind object must contain one of the following keys: "dir", "type", "maxSize", or "val"
+2021-11-15T10:26:37.292Z [BoilerPlate] [32minfo[39m: A User Is Being Deleted!
+2021-11-15T10:27:09.444Z [BoilerPlate] [32minfo[39m: Authentication Started on email: abdulkadir@gmail.com
+2021-11-15T10:27:09.480Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-15T10:27:09.488Z [BoilerPlate] [32minfo[39m: Authenticated User Logged In The Database
+2021-11-15T10:27:23.988Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-15T10:27:33.370Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-15T10:27:33.375Z [BoilerPlate] [32minfo[39m: All Users Are Being Fetched
+2021-11-15T10:27:33.437Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-15T10:27:47.653Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-15T10:27:47.685Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-15T10:27:47.721Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-15T10:27:47.724Z [BoilerPlate] [32minfo[39m: A User By Email Is Being Fetched
+2021-11-15T10:27:54.496Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-15T10:29:01.850Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-15T10:29:01.855Z [BoilerPlate] [32minfo[39m: All Users Are Being Fetched
+2021-11-15T10:29:01.880Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-15T10:32:30.809Z [BoilerPlate] [33mwarn[39m: Someone Is Trying To Get Access Without Token!!
+2021-11-15T10:33:20.992Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-15T10:33:51.477Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-15T10:33:51.481Z [BoilerPlate] [32minfo[39m: All Users Are Being Fetched
+2021-11-15T10:33:51.535Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-15T10:34:15.093Z [BoilerPlate] [32minfo[39m: app is listening on port http://localhost:5000
+2021-11-15T10:34:33.944Z [BoilerPlate] [32minfo[39m: Authentication Started on email: yacqub@gmail.com
+2021-11-15T10:34:34.114Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-15T10:34:34.121Z [BoilerPlate] [32minfo[39m: Authenticated User Logged In The Database
+2021-11-15T10:35:40.508Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-15T10:36:14.901Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-15T10:36:39.006Z [BoilerPlate] [33mwarn[39m: Someone Is Trying To Get Access Without Token!!
+2021-11-15T10:37:15.580Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-15T10:37:15.612Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-15T10:37:15.641Z [BoilerPlate] [32minfo[39m: connected to the database
+2021-11-15T10:37:15.666Z [BoilerPlate] [32minfo[39m: A New User Is Being Inserted!

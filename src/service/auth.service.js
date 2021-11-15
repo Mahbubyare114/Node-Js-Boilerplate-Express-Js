@@ -11,7 +11,7 @@ const login = async(email, password) =>{
 
     let user = await userModel.getUserByEmailAndPassword(email, password);
     console.log(`User Entered: ${user.email}`);
-   
+   // if email or pass incorrect if is not working i have to check it
     if (!user || user.length <= 0) {
         
         let message = res.__('incorrectEmailOrPassError');

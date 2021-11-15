@@ -16,11 +16,21 @@ const joi = require('joi');
     
     });
 
+    const deleteUser = joi.object({
+        email : joi.string().email().required(),
 
+    });
 
+    const getUserByEmail = joi.object({
+        email : joi.string().email().required(),
+
+    });
+    
 
     module.exports = {
         createUser,
-        updateUser
+        updateUser,
+        deleteUser,
+        getUserByEmail
     }
 

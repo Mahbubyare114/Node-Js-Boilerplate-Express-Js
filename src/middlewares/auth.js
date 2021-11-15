@@ -36,7 +36,7 @@ const authentication = (req, res, next) => {
 };
 
 /**
- * authrization middleware
+ * authorization middleware
  */
 const authorization = (apiName) => (req, res, next) => {
   try {
@@ -68,5 +68,5 @@ const authorization = (apiName) => (req, res, next) => {
 
 module.exports = {
   authentication,
-  authorization,
+  authorization
 };
