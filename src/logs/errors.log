@@ -113,3 +113,10 @@
 2021-11-15T07:44:39.480Z [BoilerPlate] [31merror[39m: ORA-12170: TNS:Connect timeout occurred
 2021-11-15T10:10:33.929Z [BoilerPlate] [31merror[39m: NJS-044: bind object must contain one of the following keys: "dir", "type", "maxSize", or "val"
 2021-11-15T10:26:37.284Z [BoilerPlate] [31merror[39m: NJS-044: bind object must contain one of the following keys: "dir", "type", "maxSize", or "val"
+2021-11-17T08:26:57.402Z [BoilerPlate] [31merror[39m: NJS-044: bind object must contain one of the following keys: "dir", "type", "maxSize", or "val"
+2021-11-17T08:39:03.808Z [BoilerPlate] [31merror[39m: NJS-044: bind object must contain one of the following keys: "dir", "type", "maxSize", or "val"
+2021-11-17T08:39:17.198Z [BoilerPlate] [31merror[39m: NJS-044: bind object must contain one of the following keys: "dir", "type", "maxSize", or "val"
+2021-11-17T10:11:30.362Z [BoilerPlate] [31merror[39m: NJS-044: bind object must contain one of the following keys: "dir", "type", "maxSize", or "val"
+2021-11-17T10:22:59.910Z [BoilerPlate] [31merror[39m: NJS-044: bind object must contain one of the following keys: "dir", "type", "maxSize", or "val"
+2021-11-17T10:24:25.656Z [BoilerPlate] [31merror[39m: NJS-044: bind object must contain one of the following keys: "dir", "type", "maxSize", or "val"
+2021-11-17T12:50:30.302Z [BoilerPlate] [31merror[39m: NJS-044: bind object must contain one of the following keys: "dir", "type", "maxSize", or "val"

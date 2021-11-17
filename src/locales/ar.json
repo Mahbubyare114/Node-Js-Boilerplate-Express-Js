@@ -15,6 +15,7 @@
 	"incorrectEmailOrPassError": "البريد الالكتروني او كلمة المرور غير صحيحة",
 	"registerSuccess": "انت تملك حساب مصرفي. يرجى التحقق من بريدك الإلكتروني للتحقق من الحساب",
 	"registerError": "حدث خطأ ما في التسجيل يرجى المحاولة مرة أخرى",
-	"allpermissions": "list of all permission available",
-	"userCreated": "userCreated"
+	"allpermissions": "قائمة بجميع الأذونات المتاحة",
+	"rolePermission" : "قائمة دور المستخدم والأذونات الخاصة به",
+	"userCreated": "تم إنشاء المستخدم بنجاح"
 }

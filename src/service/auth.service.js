@@ -10,12 +10,12 @@ const login = async(email, password) =>{
     console.log(`Executing getUserByEmailAndPassword call to model from auth service ${email}`);
 
     let user = await userModel.getUserByEmailAndPassword(email, password);
-    console.log(`User Entered: ${user.email}`);
-   // if email or pass incorrect if is not working i have to check it
+    //console.log(`User Entered: ${user.email}`);
+ 
     if (!user || user.length <= 0) {
         
-        let message = res.__('incorrectEmailOrPassError');
-        throw new ApiError(status.UNAUTHORIZED, message);
+       
+        throw new ApiError(status.UNAUTHORIZED,"incorrect email or password");
     }
 
    /**

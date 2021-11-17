@@ -13,19 +13,16 @@ const {handleAsync} = require('../utils/util'); // import handleAsync from util
  */
  const getAllUsers = handleAsync( async (req, res) => {  
 
-    let message = res.__('allUsers'); // i18n support for res
-
    let users = await userService.getAllUsers();
-   res
-   .status(status.OK)
-   .send(new ApiResponse(status.OK, message , users));
+   res.status(status.OK)
+   .send(new ApiResponse(status.OK, res.__('allUsers') , users));
 
 });
 // ********** Get All Users Ends To Here ********** //
 
 // ********** Get User by it's email Starts From Here ********** //
 /**
- * get user by it's email controller
+ * get single User Controller 
  */
   const getUserByEmail = handleAsync(async (req, res) => {
    
@@ -36,24 +33,18 @@ const {handleAsync} = require('../utils/util'); // import handleAsync from util
 /**
  * Check If User Email Is Already Exist
  */
-  let emailExist = await userService.isEmailExist(user.email); 
-  console.log(`is email exist to get user: ${emailExist}`)
+    let emailExist = await userService.isEmailExist(user.email); 
+    console.log(`is email exist to get user: ${emailExist}`)
 
     if(emailExist){
 
-        let message = res.__('singleUser'); // i18n support for res
-        let getUserByEmail = await userService.getUserByEmail(user.email);
-
+    let getUserByEmail = await userService.getUserByEmail(user.email);
          res.status(status.OK)
-        .send(new ApiResponse (status.OK , message, getUserByEmail));  
-
-        
+        .send(new ApiResponse (status.OK , res.__('singleUser'), getUserByEmail));  
     }
-    let notExistMessage = res.__('emailNotExists');  // read msg from locales notExist
-    throw new ApiError(status.NOT_ACCEPTABLE, notExistMessage)
-                                       
+    throw new ApiError(status.NOT_ACCEPTABLE, res.__('emailNotExists'));                                   
 });
-// ********** Get User by it's id Ends To Here ********** //
+// ********** Get User by it's email Ends Here ********** //
 
 // ********** Create User Starts From Here ********** //
 /**
@@ -62,21 +53,17 @@ const {handleAsync} = require('../utils/util'); // import handleAsync from util
  const create = handleAsync( async(req, res) => {
     logger.info('Calling Create User');
    
-  /**
+/**
  * Get The User
  */
-// let user = await userService.createUser(req.body);
-
     let user = req.body;
-    console.log(`Executing create user from controller ${user}`);
+   // console.log(`Executing create user from controller ${user}`);
 /**
  * Check If User email is Already Exist
  */
-    if(await userService.isEmailExist(user.email)){
-        let message = res.__('emailExists');
-       
+    if(await userService.isEmailExist(user.email)){    
          return res.status(status.NOT_ACCEPTABLE)
-        .send(new ApiError (status.NOT_ACCEPTABLE , message));          
+        .send(new ApiError (status.NOT_ACCEPTABLE , res.__('emailExists')));          
     }
 
   /**
@@ -85,18 +72,14 @@ const {handleAsync} = require('../utils/util'); // import handleAsync from util
     let createUserStatus = await userService.createUser(user);
 
     if(createUserStatus){
-        let userCreatedMsg = res.__('userCreated');
-
         return res.status(status.OK)
-        .send(new ApiResponse(status.OK, userCreatedMsg));
+        .send(new ApiResponse(status.OK, res.__('userCreated')));
     }
-
   /**
  * Display Internal Error if Occurs
  */
-    let messageInternalError = res.__('internalErrorMsg'); // read res from locales
     return res.status(status.INTERNAL_SERVER_ERROR)
-    .send(new ApiError(status.INTERNAL_SERVER_ERROR, messageInternalError));
+    .send(new ApiError(status.INTERNAL_SERVER_ERROR, res.__('internalErrorMsg')));
         
 });
 // ********** Create User Ends To Here ********** //
@@ -110,9 +93,8 @@ const update = handleAsync( async(req, res) => {
 /**
   * Get The User
  */
-
     let user = req.body;
-    console.log(`get user to update: ${user}`)
+    //console.log(`get user to update: ${user}`)
 
 /**
  * Check If User email is Not Exist in Order to Update
@@ -120,83 +102,61 @@ const update = handleAsync( async(req, res) => {
     if(!userService.isEmailExist(user.email)){
         logger.warn("Someone Trying To Update User That Does't Exist");
 
-        let message = res.__('notExist');
-
         return res.status(status.NOT_ACCEPTABLE)
-       .send(new ApiError(status.NOT_ACCEPTABLE, message +' : ' +user.email));          
+       .send(new ApiError(status.NOT_ACCEPTABLE, res.__('notExist') +' : ' +user.email));          
    }
  /**
  *  Update User If It Exists
  */
    let updatedUser = await userService.updateUser(user);
-   console.log(`updating user: ${updatedUser}`)
+   //console.log(`updating user: ${updatedUser}`)
 
     if(updatedUser){
-
-        let message = res.__('userUpdated');
-
         return res.status(status.OK)
-        .send(new ApiResponse(status.OK, message));
+        .send(new ApiResponse(status.OK, res.__('userUpdated')));
     }
  /**
  *  Display Internal Error if Error Occurs in the DB
  */  
-    let messageInternalError = res.__('internalErrorMsg'); // read res from locales
-    res.send(new ApiError(status.INTERNAL_SERVER_ERROR, messageInternalError));
+    res.send(new ApiError(status.INTERNAL_SERVER_ERROR, res.__('internalErrorMsg')));
 });
 // ********** Update User Ends To Here ********** //
 
 // ********** Delete User Starts From Here ********** //
 /**
  * Delete User Controller
- */
-const delet = handleAsync(async(req, res) => {
+*/
+ const delet = handleAsync(async(req, res) => {
 /**
-  * Get The User
- */
-let user = req.body;
-console.log(`get user to delete: ${user}`)
-
+ * Get The User email
+*/
+    let user = req.body; 
 /**
  * Check If User Already Exist's in Order to Delete
- */
-if(!userService.isEmailExist(user.email)){
-
-    let message = res.__('notExist');
-   return res.status(status.NOT_ACCEPTABLE)
-   .send(new ApiError(status.NOT_ACCEPTABLE, message +user.email));          
-}
-
+*/  
+    if(!await userService.isEmailExist(user.email)){
+       return res.status(status.NOT_ACCEPTABLE)
+       .send(new ApiError(status.NOT_ACCEPTABLE, res.__('emailNotExists')));          
+    }
+    
 /**
  * Delete User If It Exists
- */
-let deletedUser = userService.deleteUser(user);
-console.log(`deleting user: ${deletedUser}`)
-
-if(deletedUser){
-
-    let deletedUserMsg = res.__('userDeleted');
-    return res.status(status.OK)
-    .send(new ApiResponse(status.OK, deletedUserMsg));
+*/
+   let deletedUser = await userService.deleteUser(user);    
+  // console.log(`deleting user: ${deletedUser}`)
+    
+    if(deletedUser){
+        return res.status(status.OK)
+        .send(new ApiResponse(status.OK, res.__('userDeleted')));
     } 
+ /**
+ *  Display Internal Error if Error Occurs in the DB
+ */  
+      res.send(new ApiError(status.INTERNAL_SERVER_ERROR, res.__('internalErrorMsg')));
 });
 // ********** Delete User Ends To Here ********** //
 
  // ========== User API Service Calls Ends Here  ========== //
-
-
-/**
- * Test Call For i18n (Multi-lang) Controller
- */
-const testCall = handleAsync( async (req, res) => {  
- 
-    let message = res.__('amountTransfer');
-
-     res
-    .status(status.OK)
-    .send(new ApiResponse(status.OK, message));
- 
- });
 
 
 module.exports = {
@@ -204,7 +164,6 @@ module.exports = {
     update,
     getAllUsers,
     getUserByEmail,
-    delet,
-    testCall
+    delet
 
 }

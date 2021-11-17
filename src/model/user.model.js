@@ -18,8 +18,6 @@ const getAllUsers = async () => {
 const getUserByEmail = async(email) => {
     let result = await db.executeQuery(`SELECT USERID, FULLNAME, EMAIL, ACTIVE FROM USERS WHERE EMAIL= :email`
     , [email]);
-    
-    
 
     logger.info('A User By Email Is Being Fetched');
     return result;
@@ -41,13 +39,12 @@ const getUserByEmail = async(email) => {
 
     if (result.rowsAffected === 1){
 
-        logger.info('A New User Is Being Inserted!');
+    logger.info('A New User Is Being Inserted!');
     return true;
     }
    
 return false;
-   
-    
+      
 }
 /**
  * Update Single User In Oracle Db
@@ -56,11 +53,11 @@ return false;
     let email = user.email;
     let password = user.password;
     let fullName = user.fullName;
-    let active = 1;
+    let active = user.active;
 
 
     let result = await db.executeQuery(`UPDATE USERS SET PASSWORD=:password,
-    FULLNAME= :fullName WHERE EMAIL= :email`, [password, fullName, email])
+    FULLNAME= :fullName, ACTIVE=:active WHERE EMAIL= :email`, [password, fullName, active, email])
    
     if (result.rowsAffected === 1){
 
@@ -69,18 +66,22 @@ return false;
 
     }
     return false;
-
 }
 
 /**
  * Delete Single User By Email In Oracle Db
  */
-const userDelete = async(email)=>{
+const userDelete = async(user)=>{
+    let email= user.email; 
     let result = await db.executeQuery(`DELETE USERS WHERE email=:email`,[email]);
   
-    logger.info('A User Is Being Deleted!');
-    return result;
+    if (result.rowsAffected === 1){
 
+        logger.info('User Is Deleted Successfully!');
+         return true;
+        }
+    return false;
+    
 }
 // ========== User API DB Calls Ends To Here  ========== //
 
@@ -98,14 +99,10 @@ const getUserByEmailAndPassword = async(email, password) => {
       AND PASSWORD = :password
       AND ACTIVE = 1`, [email, password])
 
-      
-
       if (!result)
       return null;
       
-      logger.info('Authenticated User Logged In The Database');
-     return result[0];    
-   
+    return result[0];      
 }
 
 /**
@@ -123,8 +120,6 @@ const isEmailExist = async(email) => {
     
     return false;
 
-   
-    // return result;  
  }
  // ========== Bussiness Logic Implementation Ends To Here  ========== //
 

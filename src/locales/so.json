@@ -15,5 +15,7 @@
     "incorrectEmailOrPassError" : "emailka ama Passwordka Waa Uu Khaldanyahay!",
     "registerSuccess": "Waa lagu diiwaan galiyay Fadlan hubi emailkaga si aad u xaqiijiso akoonkaaga",
     "registerError": "Wax baa ka khaldamay diiwaangelinta fadlan isku day mar kale",
-    "allpermissions" : "list of all permission available"
+    "allpermissions" : "liiska dhammaan awoodaha jira",
+    "rolePermission" : "liiska userka noocuu yahay iyo awoodaha uu leeyahay",
+    "userCreated"     : "Isticmaalaha si guul leh ayaa loo abuuray"
 }

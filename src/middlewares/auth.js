@@ -31,7 +31,7 @@ const authentication = (req, res, next) => {
   } 
   catch (err) {
     console.log(`Error From Authentication Middleware ${err}`);
-    throw new ApiError(401,"Your authentication is Not Valid, Your Token Expired");
+    throw new ApiError(401,"Your authentication is Not Valid, Your Token Expired, Try again");
   }
 };
 
@@ -41,7 +41,7 @@ const authentication = (req, res, next) => {
 const authorization = (apiName) => (req, res, next) => {
   try {
     let data = myCache.get("decodedToken");
-    console.log(data.payload.rolename);
+   // console.log(data.payload);
 
     let userRole = data.payload.rolename;
     console.log(`user role in authorization: ${userRole}`);

@@ -1,20 +1,22 @@
-
-{
-    "amountTransfer" : "your amount has been transfered",
-    "loginSuccess"   : "you are logged in",
-    "notImplemented" : "not implemented",
-    "allUsers"       : "all users Are captured",
-    "singleUser"     : "one User Data was captured",
-    "notExist"       : "user Id Doesn't Exist",
-    "IdExist"        : "user is already Exist",
-    "emailExists"    : "user email is already Exist",
-    "emailNotExists"    : "user email is not Exist",
-    "userUpdated"    : "user Updated Successfully",
-    "updateError"    : "user was not updated, try again!",
-    "userDeleted"    : "user is Deleted Successfully",
-    "internalErrorMsg" : "something Went Wrong!",
-    "incorrectEmailOrPassError" : "email or password is incorrect",
-    "registerSuccess": "you have been registered. Please check your email to verify account",
-    "registerError"  : "something went wrong with the registration, please try again",
-    "allpermissions" : "list of all permission available"
-}
+	{
+		"amountTransfer" : "your amount has been transfered",
+		"loginSuccess"   : "you are logged in",
+		"notImplemented" : "not implemented",
+		"allUsers"       : "all users Are captured",
+		"singleUser"     : "one User Data was captured",
+		"notExist"       : "user Id Doesn't Exist",
+		"IdExist"        : "user is already Exist",
+		"emailExists"    : "user email is already Exist",
+		"emailNotExists"    : "user email is not Exist",
+		"userUpdated"    : "user Updated Successfully",
+		"updateError"    : "user was not updated, try again!",
+		"userDeleted"    : "user is Deleted Successfully",
+		"internalErrorMsg" : "something Went Wrong, Plz try again!",
+		"incorrectEmailOrPassError" : "email or password is incorrect",
+		"registerSuccess": "you have been registered. Please check your email to verify account",
+		"registerError"  : "something went wrong with the registration, please try again",
+		"allpermissions" : "list of all permission available",
+		"rolePermission" : "List of user role and permissions",
+		"userCreated"     : "user created successfully"
+	}
+	

@@ -158,3 +158,16 @@
 2021-11-15T10:26:37.284Z [BoilerPlate] [31merror[39m: NJS-044: bind object must contain one of the following keys: "dir", "type", "maxSize", or "val"
 2021-11-15T10:32:30.809Z [BoilerPlate] [33mwarn[39m: Someone Is Trying To Get Access Without Token!!
 2021-11-15T10:36:39.006Z [BoilerPlate] [33mwarn[39m: Someone Is Trying To Get Access Without Token!!
+2021-11-17T08:26:57.402Z [BoilerPlate] [31merror[39m: NJS-044: bind object must contain one of the following keys: "dir", "type", "maxSize", or "val"
+2021-11-17T08:39:03.808Z [BoilerPlate] [31merror[39m: NJS-044: bind object must contain one of the following keys: "dir", "type", "maxSize", or "val"
+2021-11-17T08:39:17.198Z [BoilerPlate] [31merror[39m: NJS-044: bind object must contain one of the following keys: "dir", "type", "maxSize", or "val"
+2021-11-17T08:40:02.373Z [BoilerPlate] [33mwarn[39m: Someone Trying To Delete User That Does't Exist
+2021-11-17T08:42:54.440Z [BoilerPlate] [33mwarn[39m: Someone Trying To Delete User That Does't Exist
+2021-11-17T08:43:35.467Z [BoilerPlate] [33mwarn[39m: Someone Trying To Delete User That Does't Exist
+2021-11-17T08:43:39.950Z [BoilerPlate] [33mwarn[39m: Someone Trying To Delete User That Does't Exist
+2021-11-17T08:44:23.587Z [BoilerPlate] [33mwarn[39m: Someone Trying To Delete User That Does't Exist
+2021-11-17T08:48:25.216Z [BoilerPlate] [33mwarn[39m: Someone Trying To Delete User That Does't Exist
+2021-11-17T10:11:30.362Z [BoilerPlate] [31merror[39m: NJS-044: bind object must contain one of the following keys: "dir", "type", "maxSize", or "val"
+2021-11-17T10:22:59.910Z [BoilerPlate] [31merror[39m: NJS-044: bind object must contain one of the following keys: "dir", "type", "maxSize", or "val"
+2021-11-17T10:24:25.656Z [BoilerPlate] [31merror[39m: NJS-044: bind object must contain one of the following keys: "dir", "type", "maxSize", or "val"
+2021-11-17T12:50:30.302Z [BoilerPlate] [31merror[39m: NJS-044: bind object must contain one of the following keys: "dir", "type", "maxSize", or "val"

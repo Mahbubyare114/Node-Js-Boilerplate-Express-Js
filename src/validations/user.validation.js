@@ -12,17 +12,18 @@ const joi = require('joi');
     const updateUser = joi.object({
         fullName: joi.string().required(),
         password: joi.string().min(6).required(),
-        email : joi.string().email().required()
+        email : joi.string().email().required(),
+        active: joi.number().valid(0,1)
     
     });
 
     const deleteUser = joi.object({
-        email : joi.string().email().required(),
+        email : joi.string().email().required()
 
     });
 
     const getUserByEmail = joi.object({
-        email : joi.string().email().required(),
+        email : joi.string().email().required()
 
     });
     

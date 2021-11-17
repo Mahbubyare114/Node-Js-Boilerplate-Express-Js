@@ -8,8 +8,9 @@ const { authentication, authorization } = require('../../middlewares');
 
 // end points with authentication and authrization
 router.post('/login', validate(authValidator.login), authController.login);
-router.get('/permission', authentication, authorization('viewAllPermissions'), permissionController.permissions); 
-router.post('/register', authentication, authorization('createUser'), validate(authValidator.register) , authController.register);
+router.get('/permission', authentication, authorization('viewAllPermissions'),permissionController.permissions);
+router.post('/register', authentication, authorization('createUser'), 
+ validate(authValidator.register), authController.register);
 
 
 module.exports = router;
